@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>升級專業版 | Premium - AI 名片經理</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">
+                        <span class="lang-zh">AI 名片經理</span>
+                        <span class="lang-en hidden">AI Business Card Manager</span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
+                    <a href="terms-of-service.html" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
+                    
+                    <!-- Language Toggle -->
+                    <button id="langToggle" class="flex items-center space-x-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition">
+                        <span class="lang-zh">繁體中文</span>
+                        <span class="lang-en hidden">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-blue-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-block mb-4" data-aos="fade-down">
+                <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold">
+                    <span class="lang-zh">升級方案</span>
+                    <span class="lang-en hidden">Premium Plan</span>
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6" data-aos="fade-up">
+                <span class="lang-zh">升級<span class="gradient-text">專業版</span></span>
+                <span class="lang-en hidden">Upgrade to <span class="gradient-text">Premium</span></span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <span class="lang-zh">解鎖全部功能，打造專業級人脈管理體驗</span>
+                <span class="lang-en hidden">Unlock all features for professional networking management</span>
+            </p>
+            <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <span class="lang-zh">目前完全免費使用！專業版功能規劃中</span>
+                <span class="lang-en hidden">Currently 100% Free! Premium features in planning</span>
+            </div>
+        </div>
+        
+        <!-- Bottom Wave Decoration -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" fill-opacity="0.3"/>
+                <path d="M0 120L60 112.5C120 105 240 90 360 82.5C480 75 600 75 720 78.75C840 82.5 960 90 1080 93.75C1200 97.5 1320 97.5 1380 97.5L1440 97.5V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white" fill-opacity="0.5"/>
+                <path d="M0 120L60 115C120 110 240 100 360 95C480 90 600 90 720 92.5C840 95 960 100 1080 102.5C1200 105 1320 105 1380 105L1440 105V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition" data-aos="fade-up">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                            <span class="lang-zh">免費版</span>
+                            <span class="lang-en hidden">Free</span>
+                        </h3>
+                        <div class="text-4xl font-bold text-gray-900 mb-2">$0</div>
+                        <p class="text-gray-500">
+                            <span class="lang-zh">永久免費</span>
+                            <span class="lang-en hidden">Forever Free</span>
+                        </p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">
+                                <span class="lang-zh">基礎 OCR 辨識</span>
+                                <span class="lang-en hidden">Basic OCR Recognition</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">
+                                <span class="lang-zh">基本名片儲存</span>
+                                <span class="lang-en hidden">Basic Card Storage</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">
+                                <span class="lang-zh">基本資料夾分類</span>
+                                <span class="lang-en hidden">Basic Folder Organization</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-gray-700">
+                                <span class="lang-zh">JSON 匯出</span>
+                                <span class="lang-en hidden">JSON Export</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start text-gray-400">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh">專業版功能</span>
+                                <span class="lang-en hidden">Premium Features</span>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full py-3 bg-gray-200 text-gray-600 rounded-xl font-semibold cursor-not-allowed">
+                        <span class="lang-zh">目前方案</span>
+                        <span class="lang-en hidden">Current Plan</span>
+                    </button>
+                </div>
+                
+                <!-- Pro Plan (Featured) -->
+                <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-2xl p-8 transform scale-105 relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 px-4 py-1 rounded-bl-xl rounded-tr-xl font-semibold text-sm">
+                        <span class="lang-zh">最受歡迎</span>
+                        <span class="lang-en hidden">Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-6 text-white">
+                        <h3 class="text-2xl font-bold mb-2">
+                            <span class="lang-zh">專業版</span>
+                            <span class="lang-en hidden">Pro</span>
+                        </h3>
+                        <div class="text-4xl font-bold mb-2">
+                            <span class="lang-zh">NT$99</span>
+                            <span class="lang-en hidden">$3.99</span>
+                        </div>
+                        <p class="text-blue-100">
+                            <span class="lang-zh">每月</span>
+                            <span class="lang-en hidden">per month</span>
+                        </p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh"><strong>無限次掃描</strong></span>
+                                <span class="lang-en hidden"><strong>Unlimited Scans</strong></span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh"><strong>無廣告體驗</strong></span>
+                                <span class="lang-en hidden"><strong>Ad-Free</strong> Experience</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh">進階匯出格式<strong>（CSV + vCard）</strong></span>
+                                <span class="lang-en hidden">Advanced Export <strong>(CSV + vCard)</strong></span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh">批次操作功能</span>
+                                <span class="lang-en hidden">Batch Operations</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh">優先技術支援</span>
+                                <span class="lang-en hidden">Priority Support</span>
+                            </span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>
+                                <span class="lang-zh">未來新功能優先體驗</span>
+                                <span class="lang-en hidden">Early Access to New Features</span>
+                            </span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition">
+                        <span class="lang-zh">即將推出</span>
+                        <span class="lang-en hidden">Coming Soon</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Comparison Table -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    <span class="lang-zh">功能比較表</span>
+                    <span class="lang-en hidden">Feature Comparison</span>
+                </h2>
+            </div>
+            
+            <div class="overflow-x-auto" data-aos="fade-up">
+                <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">
+                                <span class="lang-zh">功能</span>
+                                <span class="lang-en hidden">Features</span>
+                            </th>
+                            <th class="px-6 py-4 text-center">
+                                <span class="lang-zh">免費版</span>
+                                <span class="lang-en hidden">Free</span>
+                            </th>
+                            <th class="px-6 py-4 text-center bg-white/20">
+                                <span class="lang-zh">專業版</span>
+                                <span class="lang-en hidden">Pro</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">OCR 辨識</span>
+                                <span class="lang-en hidden">OCR Recognition</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="lang-zh">基礎</span>
+                                <span class="lang-en hidden">Basic</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <span class="lang-zh">進階（95%+）</span>
+                                <span class="lang-en hidden">Advanced (95%+)</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">名片儲存</span>
+                                <span class="lang-en hidden">Card Storage</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="lang-zh">標準</span>
+                                <span class="lang-en hidden">Standard</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <span class="lang-zh">大容量</span>
+                                <span class="lang-en hidden">Large</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">資料匯出</span>
+                                <span class="lang-en hidden">Data Export</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="text-gray-500">JSON</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <span class="text-green-600 font-semibold">JSON + CSV</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">資料夾分類</span>
+                                <span class="lang-en hidden">Folder Organization</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="lang-zh">基本</span>
+                                <span class="lang-en hidden">Basic</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <span class="lang-zh">進階</span>
+                                <span class="lang-en hidden">Advanced</span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">批次操作</span>
+                                <span class="lang-en hidden">Batch Operations</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="lang-zh">基本</span>
+                                <span class="lang-en hidden">Basic</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <svg class="w-5 h-5 text-green-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">無廣告</span>
+                                <span class="lang-en hidden">Ad-Free</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">-</td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <svg class="w-5 h-5 text-green-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <div class="container mx-auto px-4 text-center">
+            <div data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                    <span class="lang-zh">準備好提升您的人脈管理了嗎？</span>
+                    <span class="lang-en hidden">Ready to Upgrade Your Network Management?</span>
+                </h2>
+                <p class="text-xl text-blue-100 mb-8">
+                    <span class="lang-zh">專業版即將推出，立即註冊搶先體驗！</span>
+                    <span class="lang-en hidden">Premium coming soon. Register now for early access!</span>
+                </p>
+                
+                <!-- Payment Integration Placeholder -->
+                <div class="bg-white/10 backdrop-blur-sm border-2 border-white/30 rounded-xl p-8 max-w-md mx-auto">
+                    <p class="text-white mb-4">
+                        <span class="lang-zh">未來付款方式</span>
+                        <span class="lang-en hidden">Future Payment Methods</span>
+                    </p>
+                    <div class="space-y-2 text-sm text-blue-100">
+                        <p>
+                            <span class="lang-zh">• Stripe 信用卡付款</span>
+                            <span class="lang-en hidden">• Stripe Credit Card</span>
+                        </p>
+                        <p>
+                            <span class="lang-zh">• RevenueCat 訂閱管理</span>
+                            <span class="lang-en hidden">• RevenueCat Subscription</span>
+                        </p>
+                        <p>
+                            <span class="lang-zh">• Apple Pay / Google Pay</span>
+                            <span class="lang-en hidden">• Apple Pay / Google Pay</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <p class="text-white mt-8 text-sm">
+                    <span class="lang-zh"><!-- TODO: integrate RevenueCat or Stripe API --></span>
+                    <span class="lang-en hidden"><!-- TODO: integrate RevenueCat or Stripe API --></span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-sm mb-4">
+                    <span class="lang-zh">© 2025 AI 名片經理. 版權所有.</span>
+                    <span class="lang-en hidden">© 2025 AI Business Card Manager. All rights reserved.</span>
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="index.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                    <a href="privacy.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
+                    <a href="terms-of-service.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用條款 | Terms of Service - AI 名片經理</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-bold text-gray-900">
+                        <span class="lang-zh">AI 名片經理</span>
+                        <span class="lang-en hidden">AI Business Card Manager</span>
+                    </span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
+                    <a href="terms-of-service.html" class="text-blue-600 font-semibold">
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
+                    
+                    <!-- Language Toggle -->
+                    <button id="langToggle" class="flex items-center space-x-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition">
+                        <span class="lang-zh">繁體中文</span>
+                        <span class="lang-en hidden">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-16 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-gradient-to-br from-blue-300 to-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute bottom-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-block mb-4" data-aos="fade-down">
+                <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold">
+                    <span class="lang-zh">使用條款</span>
+                    <span class="lang-en hidden">Terms of Service</span>
+                </span>
+            </div>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6" data-aos="fade-up">
+                <span class="lang-zh">服務使用條款</span>
+                <span class="lang-en hidden">Terms of Service</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-2" data-aos="fade-up" data-aos-delay="100">
+                <span class="lang-zh">生效日期：2025 年 1 月 1 日</span>
+                <span class="lang-en hidden">Effective Date: January 1, 2025</span>
+            </p>
+            <p class="text-sm text-gray-500 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <span class="lang-zh">請仔細閱讀本使用條款。使用本服務即表示您同意受本條款約束。</span>
+                <span class="lang-en hidden">Please read these Terms carefully. By using the Service, you agree to be bound by these Terms.</span>
+            </p>
+        </div>
+        
+        <!-- Bottom Wave Decoration -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg class="w-full h-auto text-white" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0 0L60 8C120 16 240 32 360 37.3C480 43 600 37 720 34.7C840 32 960 32 1080 37.3C1200 43 1320 53 1380 58.7L1440 64V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0V0Z" fill="currentColor"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Terms Content -->
+    <section class="py-12">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                
+                <!-- Developer Info Banner -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl mb-8">
+                    <div class="lang-zh space-y-2">
+                        <p class="text-sm text-gray-600"><strong>應用程式名稱：</strong>AI 名片經理</p>
+                        <p class="text-sm text-gray-600"><strong>開發者：</strong>劉亦恩</p>
+                        <p class="text-sm text-gray-600"><strong>聯絡信箱：</strong><a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a></p>
+                        <p class="text-sm text-gray-600"><strong>官方網站：</strong><a href="https://aimingpian.com" class="text-blue-600 hover:underline">https://aimingpian.com</a></p>
+                    </div>
+                    <div class="lang-en hidden space-y-2">
+                        <p class="text-sm text-gray-600"><strong>App Name:</strong> AI Business Card Manager</p>
+                        <p class="text-sm text-gray-600"><strong>Developer:</strong> Yi-En Liu (劉亦恩)</p>
+                        <p class="text-sm text-gray-600"><strong>Contact Email:</strong> <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a></p>
+                        <p class="text-sm text-gray-600"><strong>Website:</strong> <a href="https://aimingpian.com" class="text-blue-600 hover:underline">https://aimingpian.com</a></p>
+                    </div>
+                </div>
+
+                <!-- Quick Summary -->
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-12">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+                        <span class="lang-zh">重點摘要（2分鐘快速了解）</span>
+                        <span class="lang-en hidden">Quick Summary (2-minute read)</span>
+                    </h3>
+                    <div class="max-w-4xl">
+                        <div class="lang-zh text-sm text-gray-700 space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>免費試用</strong>：訂閱前可免費試用 3 天</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>年齡限制</strong>：需年滿 13 歲使用</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>退款政策</strong>：試用期內免費取消，訂閱後依平台政策</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>OCR 免責</strong>：AI 辨識僅供參考，請自行核對</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>資料備份</strong>：建議定期備份，我們不對資料遺失負責</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>廣告顯示</strong>：免費版會顯示 Google AdMob 廣告</p>
+                            </div>
+                        </div>
+                        <div class="lang-en hidden text-sm text-gray-700 space-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>Free Trial</strong>: 3-day free trial before subscription</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>Age Limit</strong>: Must be 13+ to use</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>Refund Policy</strong>: Free cancellation during trial, platform policy after</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>OCR Disclaimer</strong>: AI recognition is for reference, please verify</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>Data Backup</strong>: Regular backups recommended, we're not liable for data loss</p>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                <p><strong>Ads</strong>: Free version displays Google AdMob ads</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 1: Acceptance of Terms -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">1</span>
+                        <span class="lang-zh">接受條款</span>
+                        <span class="lang-en hidden">Acceptance of Terms</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                歡迎使用 <strong>AI 名片經理</strong>（以下簡稱「本應用程式」、「本服務」或「我們」）。本服務由 <strong>劉亦恩</strong> 開發及營運。
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                本使用條款（以下簡稱「本條款」）構成您與我們之間具有法律約束力的協議。使用本服務前，請仔細閱讀本條款。
+                            </p>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-orange-900">重要聲明：</strong><br>
+                                    當您下載、安裝、註冊、存取或以任何方式使用本服務時，即表示您已閱讀、理解並同意受本條款約束。若您不同意本條款，請勿使用本服務。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                Welcome to <strong>AI Business Card Manager</strong> (hereinafter referred to as "the App", "the Service", or "we"). The Service is developed and operated by <strong>Yi-En Liu (劉亦恩)</strong>.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                These Terms of Service (the "Terms") constitute a legally binding agreement between you and us. Please read these Terms carefully before using the Service.
+                            </p>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-orange-900">Important Notice:</strong><br>
+                                    By downloading, installing, registering, accessing, or using the Service in any way, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, please do not use the Service.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Service Description -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">2</span>
+                        <span class="lang-zh">服務說明</span>
+                        <span class="lang-en hidden">Service Description</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">2.1 服務內容</h3>
+                            <p class="text-gray-700">本服務提供以下核心功能：</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📷</span>
+                                    <span><strong>名片掃描</strong>：使用相機掃描實體名片</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">🤖</span>
+                                    <span><strong>AI OCR 辨識</strong>：透過 Google Vision AI 自動識別名片文字資訊</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📇</span>
+                                    <span><strong>聯絡人管理</strong>：組織、編輯、搜尋、分類聯絡人資料</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📂</span>
+                                    <span><strong>資料夾管理</strong>：自訂分類與整理聯絡人</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📤</span>
+                                    <span><strong>資料匯出</strong>：匯出聯絡人資料為 JSON、CSV 等格式</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">2.2 服務變更與中斷</h3>
+                            <p class="text-gray-700">
+                                我們保留隨時修改、暫停或終止全部或部分服務的權利，無需事先通知。我們會盡合理努力提前通知重大變更，但在緊急情況下（如安全性問題、系統維護），可能立即實施變更。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">2.1 Service Features</h3>
+                            <p class="text-gray-700">The Service provides the following core features:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📷</span>
+                                    <span><strong>Business Card Scanning</strong>: Use camera to scan physical cards</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">🤖</span>
+                                    <span><strong>AI OCR Recognition</strong>: Automatic text extraction via Google Vision AI</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📇</span>
+                                    <span><strong>Contact Management</strong>: Organize, edit, search, and categorize contacts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📂</span>
+                                    <span><strong>Folder Management</strong>: Custom categories and contact organization</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">📤</span>
+                                    <span><strong>Data Export</strong>: Export contacts to JSON, CSV, etc.</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">2.2 Service Changes and Interruptions</h3>
+                            <p class="text-gray-700">
+                                We reserve the right to modify, suspend, or discontinue all or part of the Service at any time without prior notice. We will make reasonable efforts to notify you of significant changes in advance, but in emergency situations (e.g., security issues, system maintenance), changes may be implemented immediately.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Eligibility and Account -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">3</span>
+                        <span class="lang-zh">使用資格與帳號</span>
+                        <span class="lang-en hidden">Eligibility and Account</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">3.1 年齡限制</h3>
+                            <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                                <p class="text-gray-700">
+                                    <strong>您必須年滿 13 歲</strong>才能使用本服務。未滿 13 歲的兒童不得註冊或使用本服務。若我們發現用戶未滿 13 歲，將立即終止該帳號。
+                                </p>
+                            </div>
+                            <p class="text-sm text-gray-600 italic">
+                                ※ 本年齡限制符合 COPPA（兒童線上隱私保護法）及 Google AdMob 政策要求。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">3.2 帳號註冊</h3>
+                            <p class="text-gray-700">使用本服務時，您需要：</p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">①</span>
+                                    <span>提供真實、準確、完整的註冊資訊</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">②</span>
+                                    <span>及時更新您的帳號資訊以保持準確性</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">③</span>
+                                    <span>妥善保管您的帳號密碼，不得與他人共享</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">④</span>
+                                    <span>對使用您帳號進行的所有活動負責</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">3.3 帳號安全</h3>
+                            <p class="text-gray-700">
+                                若您發現帳號遭未經授權使用或任何安全性問題，請立即透過 <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a> 通知我們。我們不對因您未妥善保管帳號而造成的損失負責。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">3.1 Age Restriction</h3>
+                            <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+                                <p class="text-gray-700">
+                                    <strong>You must be at least 13 years old</strong> to use the Service. Children under 13 may not register or use the Service. If we discover a user is under 13, we will immediately terminate that account.
+                                </p>
+                            </div>
+                            <p class="text-sm text-gray-600 italic">
+                                ※ This age restriction complies with COPPA (Children's Online Privacy Protection Act) and Google AdMob policy requirements.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">3.2 Account Registration</h3>
+                            <p class="text-gray-700">When using the Service, you must:</p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">①</span>
+                                    <span>Provide true, accurate, and complete registration information</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">②</span>
+                                    <span>Keep your account information updated to maintain accuracy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">③</span>
+                                    <span>Keep your account password secure and not share it with others</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-purple-500 mr-2">④</span>
+                                    <span>Be responsible for all activities under your account</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">3.3 Account Security</h3>
+                            <p class="text-gray-700">
+                                If you discover unauthorized use of your account or any security issue, please immediately notify us at <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a>. We are not responsible for losses due to your failure to secure your account.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Subscription and Payment -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">4</span>
+                        <span class="lang-zh">訂閱方案與付費</span>
+                        <span class="lang-en hidden">Subscription and Payment</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">4.1 服務方案</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-50 p-4 rounded-lg border-l-4 border-gray-400">
+                                    <h4 class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-2">免費方案</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                        <li>• 基本名片掃描功能</li>
+                                        <li>• 本地儲存聯絡人</li>
+                                        <li>• 顯示廣告</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-indigo-50 p-4 rounded-lg border-2 border-indigo-300">
+                                    <p class="font-semibold text-gray-900 mb-2">⭐ 訂閱方案</p>
+                                    <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                        <li>• 無限次掃描</li>
+                                        <li>• 進階匯出格式（CSV + vCard）</li>
+                                        <li>• 進階批次操作</li>
+                                        <li>• 無廣告體驗</li>
+                                        <li>• 優先客戶支援</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.2 免費試用期</h3>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                                <p class="text-gray-700">
+                                    <strong>3 天免費試用</strong>：新用戶首次訂閱可享有 3 天免費試用期。試用期間您可使用完整的訂閱功能。
+                                </p>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    <strong class="text-green-900">自動續訂提醒</strong>：試用期結束前 24 小時，除非您取消訂閱，否則將自動轉為付費訂閱並開始計費。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.3 付款與自動續訂</h3>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>付款透過 Apple App Store 或 Google Play Store 處理</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>訂閱將自動續訂，直到您取消為止</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>費用將在每個訂閱週期結束前 24 小時從您的帳戶扣款</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>您可隨時在裝置設定中取消自動續訂</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.4 退款政策</h3>
+                            <div class="space-y-2 text-gray-700 text-sm">
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>試用期內</strong>：可隨時免費取消，不會被收取任何費用。</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>iOS (Apple)</strong>：退款申請需透過 Apple 處理，遵循 Apple 的退款政策。一般情況下，已付費的訂閱不提供退款，但可取消自動續訂。</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>Android (Google Play)</strong>：訂閱開始後 48 小時內可申請退款。超過 48 小時的退款申請需遵循 Google Play 政策。</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>特殊情況</strong>：若發生技術故障、重複扣款或其他我們認定的合理情況，我們可提供全額或部分退款。請聯絡 <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a>。</p>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.5 價格調整</h3>
+                            <p class="text-gray-700 text-sm">
+                                我們保留調整訂閱價格的權利。價格變更將提前至少 30 天透過 App 通知或電子郵件告知您。若您不接受新價格，可在生效前取消訂閱。繼續使用服務即表示您接受新價格。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">4.1 Service Plans</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-2">Free Plan</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                        <li>• Basic card scanning</li>
+                                        <li>• Local contact storage</li>
+                                        <li>• Ad-supported</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-indigo-50 p-4 rounded-lg border-2 border-indigo-300">
+                                    <p class="font-semibold text-gray-900 mb-2">⭐ Subscription Plan</p>
+                                    <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                        <li>• Unlimited scans</li>
+                                        <li>• Ad-free experience</li>
+                                        <li>• Priority support</li>
+                                        <li>• Advanced data export</li>
+                                        <li>• Early access to new features</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.2 Free Trial</h3>
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+                                <p class="text-gray-700">
+                                    <strong>3-Day Free Trial</strong>: New users receive a 3-day free trial with their first subscription, with full access to subscription features.
+                                </p>
+                                <p class="text-sm text-gray-600 mt-2">
+                                    <strong class="text-green-900">Auto-Renewal Notice</strong>: Unless you cancel 24 hours before trial end, your subscription will automatically convert to paid and billing will begin.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.3 Payment and Auto-Renewal</h3>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>Payment processed through Apple App Store or Google Play Store</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>Subscription auto-renews until you cancel</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>Charges occur 24 hours before each subscription period ends</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-indigo-500 mr-2">•</span>
+                                    <span>Cancel auto-renewal anytime in device settings</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.4 Refund Policy</h3>
+                            <div class="space-y-2 text-gray-700 text-sm">
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>During Trial</strong>: Cancel anytime free of charge.</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>iOS (Apple)</strong>: Refund requests handled by Apple per their refund policy. Generally, paid subscriptions are non-refundable, but auto-renewal can be canceled.</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>Android (Google Play)</strong>: Request refunds within 48 hours of subscription start. Requests after 48 hours subject to Google Play policy.</p>
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <p><strong>Special Cases</strong>: For technical issues, duplicate charges, or other reasonable circumstances, we may provide full or partial refunds. Contact <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a>.</p>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">4.5 Price Changes</h3>
+                            <p class="text-gray-700 text-sm">
+                                We reserve the right to adjust subscription prices. Price changes will be communicated at least 30 days in advance via app notification or email. If you don't accept the new price, cancel before it takes effect. Continued use indicates acceptance of the new price.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5: Prohibited Activities -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">5</span>
+                        <span class="lang-zh">禁止行為</span>
+                        <span class="lang-en hidden">Prohibited Activities</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700">使用本服務時，您<strong>不得</strong>從事以下行為：</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>違反任何適用的法律、法規或第三方權利</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>侵犯他人的智慧財產權、隱私權或其他合法權益</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>未經他人同意掃描或儲存其名片資料</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>上傳、傳播病毒、惡意軟體或任何有害程式碼</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>試圖未經授權存取我們的系統、伺服器或資料庫</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>使用自動化工具（機器人、爬蟲等）進行大量操作</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>冒充他人或提供虛假、誤導性資訊</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>干擾、破壞或損害服務的正常運作</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>逆向工程、反編譯或試圖提取本應用程式的原始碼</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>將本服務用於商業目的（如轉售、出租）而未經我們書面同意</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-red-900">違規後果</strong>：若您違反上述禁止行為，我們保留立即暫停或終止您的帳號、刪除相關內容、並採取法律行動的權利。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700">When using the Service, you <strong>must not</strong>:</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Violate any applicable laws, regulations, or third-party rights</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Infringe on intellectual property, privacy, or other legal rights</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Scan or store business cards without consent</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Upload or distribute viruses, malware, or harmful code</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Attempt unauthorized access to our systems, servers, or databases</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Use automated tools (bots, crawlers) for bulk operations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Impersonate others or provide false, misleading information</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Interfere with, disrupt, or damage service operations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Reverse engineer, decompile, or extract source code</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>Use the Service commercially (resale, rental) without written consent</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="bg-red-50 border-l-4 border-red-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-red-900">Consequences</strong>: Violations may result in immediate account suspension or termination, content removal, and legal action.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 6: User-Generated Content -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">6</span>
+                        <span class="lang-zh">使用者生成內容</span>
+                        <span class="lang-en hidden">User-Generated Content</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">6.1 內容發布</h3>
+                            <p class="text-gray-700">
+                                本服務允許您發布評論、評分、回饋等內容（以下統稱「用戶內容」）。發布用戶內容時，您聲明並保證：
+                            </p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>您擁有發布該內容的完整權利</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>內容不侵犯任何第三方權利</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>內容不違反本條款或適用法律</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.2 禁止內容</h3>
+                            <p class="text-gray-700">您發布的用戶內容<strong>不得包含</strong>：</p>
+                            <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                <div class="bg-orange-50 p-2 rounded">❌ 非法或欺詐內容</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ 仇恨言論或歧視</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ 暴力或威脅內容</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ 色情或成人內容</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ 垃圾訊息或廣告</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ 侵權或抄襲內容</div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.3 內容授權</h3>
+                            <p class="text-gray-700 text-sm">
+                                發布用戶內容時，您授予我們非獨家、全球性、免權利金、可再授權的權利，以使用、複製、修改、展示您的內容，僅限於提供和改善本服務。您保留內容的所有權。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.4 檢舉機制</h3>
+                            <p class="text-gray-700 text-sm">
+                                若您發現不當內容，請透過 App 內的檢舉功能或電子郵件 <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a> 向我們檢舉。我們將在收到檢舉後 48 小時內審核並採取適當行動。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.5 內容審核與移除</h3>
+                            <p class="text-gray-700 text-sm">
+                                我們保留（但無義務）審核、編輯或移除任何用戶內容的權利。若內容違反本條款，我們可立即移除，並對發布者採取以下措施：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>① <strong>首次違規</strong>：警告通知</li>
+                                <li>② <strong>二次違規</strong>：暫停帳號 7-30 天</li>
+                                <li>③ <strong>嚴重或重複違規</strong>：永久刪除帳號</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">6.1 Content Posting</h3>
+                            <p class="text-gray-700">
+                                The Service allows you to post comments, ratings, feedback, etc. ("User Content"). By posting User Content, you represent and warrant:
+                            </p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>You have full rights to post the content</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>Content doesn't infringe third-party rights</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-orange-500 mr-2">•</span>
+                                    <span>Content doesn't violate these Terms or laws</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.2 Prohibited Content</h3>
+                            <p class="text-gray-700">User Content <strong>must not contain</strong>:</p>
+                            <div class="grid grid-cols-2 gap-2 text-sm text-gray-700">
+                                <div class="bg-orange-50 p-2 rounded">❌ Illegal or fraudulent content</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ Hate speech or discrimination</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ Violence or threats</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ Pornographic or adult content</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ Spam or advertisements</div>
+                                <div class="bg-orange-50 p-2 rounded">❌ Infringing or plagiarized content</div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.3 Content License</h3>
+                            <p class="text-gray-700 text-sm">
+                                By posting User Content, you grant us a non-exclusive, worldwide, royalty-free, sublicensable right to use, reproduce, modify, and display your content solely for providing and improving the Service. You retain ownership of your content.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.4 Reporting Mechanism</h3>
+                            <p class="text-gray-700 text-sm">
+                                If you find inappropriate content, report it via the in-app reporting feature or email <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a>. We'll review and take action within 48 hours.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">6.5 Content Moderation and Removal</h3>
+                            <p class="text-gray-700 text-sm">
+                                We reserve the right (but have no obligation) to review, edit, or remove any User Content. For violations, we may:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>① <strong>First violation</strong>: Warning notice</li>
+                                <li>② <strong>Second violation</strong>: 7-30 day account suspension</li>
+                                <li>③ <strong>Severe/repeated violations</strong>: Permanent account deletion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 7: Intellectual Property -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">7</span>
+                        <span class="lang-zh">智慧財產權</span>
+                        <span class="lang-en hidden">Intellectual Property</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">7.1 本服務的所有權</h3>
+                            <p class="text-gray-700">
+                                本應用程式及其所有相關內容、功能、設計、商標、標誌、介面、程式碼等（統稱「服務內容」）的所有智慧財產權均屬於我們所有或經授權使用。
+                            </p>
+                            <p class="text-gray-700 text-sm">
+                                未經我們事先書面同意，您不得複製、修改、散布、出售、出租、轉授權或以任何方式利用服務內容。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">7.2 您的內容所有權</h3>
+                            <p class="text-gray-700">
+                                您上傳、掃描或建立的名片圖片、聯絡人資料等內容的所有權仍屬於您。您授予我們使用這些內容以提供服務的必要權利（如儲存、處理、展示）。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">7.3 商標</h3>
+                            <p class="text-gray-700 text-sm">
+                                「AI 名片經理」、「AI Business Card Manager」及相關標誌為我們的商標。未經授權，不得使用我們的商標。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">7.1 Service Ownership</h3>
+                            <p class="text-gray-700">
+                                All intellectual property rights in the App and its content, features, design, trademarks, logos, interface, code, etc. ("Service Content") are owned by us or licensed to us.
+                            </p>
+                            <p class="text-gray-700 text-sm">
+                                Without our prior written consent, you may not copy, modify, distribute, sell, rent, sublicense, or exploit Service Content.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">7.2 Your Content Ownership</h3>
+                            <p class="text-gray-700">
+                                You retain ownership of business card images, contact data, etc. that you upload, scan, or create. You grant us necessary rights to use this content to provide the Service (storage, processing, display).
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">7.3 Trademarks</h3>
+                            <p class="text-gray-700 text-sm">
+                                "AI 名片經理", "AI Business Card Manager" and related logos are our trademarks. Unauthorized use is prohibited.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 8: Disclaimers -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">8</span>
+                        <span class="lang-zh">免責聲明</span>
+                        <span class="lang-en hidden">Disclaimers</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded mb-4">
+                                <p class="font-bold text-gray-900 text-lg mb-2">
+                                    <span class="text-orange-900 font-bold">重要：請仔細閱讀本免責聲明</span>
+                                </p>
+                                <p class="text-sm text-gray-700">
+                                    本服務按「現況」（AS IS）及「現有」（AS AVAILABLE）基礎提供，不提供任何明示或暗示的保證或擔保。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900">8.1 OCR 辨識準確度</h3>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>我們不保證 OCR 辨識的準確性。</strong>名片掃描與 AI 辨識功能依賴第三方技術（Google Vision AI、Gemini AI），受多種因素影響：
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• 名片設計、字型、顏色</li>
+                                    <li>• 拍攝角度、光線條件</li>
+                                    <li>• 名片髒污、損毀程度</li>
+                                    <li>• 語言混用（中英文混雜）</li>
+                                </ul>
+                                <p class="text-sm text-gray-700 mt-3 font-semibold">
+                                    ✋ <strong>您的責任</strong>：辨識結果僅供參考，您應自行核對並更正資訊。我們對因辨識錯誤造成的任何損失不負責任。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.2 資料遺失與同步失敗</h3>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>我們不對資料遺失負責。</strong>可能導致資料遺失的情況包括但不限於：
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• 裝置故障、遺失或損壞</li>
+                                    <li>• 應用程式卸載或重新安裝</li>
+                                    <li>• 作業系統更新或重置</li>
+                                    <li>• APP 卸載或資料清除</li>
+                                    <li>• OCR 服務暫時中斷（網路中斷、API 額度限制）</li>
+                                    <li>• 第三方服務中斷（Google Cloud API）</li>
+                                </ul>
+                                <p class="text-sm text-gray-700 mt-3 font-semibold">
+                                    💾 <strong>備份建議</strong>：我們強烈建議您定期使用「匯出資料」功能備份您的聯絡人資料。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.3 服務可用性</h3>
+                            <p class="text-gray-700 text-sm">
+                                我們不保證服務：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• 不會中斷、延遲或無錯誤</li>
+                                <li>• 永遠可用或無當機</li>
+                                <li>• 免於病毒或有害元件</li>
+                                <li>• 符合您的特定需求或期望</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.4 第三方服務依賴</h3>
+                            <p class="text-gray-700 text-sm">
+                                本服務依賴第三方服務（Google Vision AI、Supabase、Gemini AI 等）。這些服務的中斷、政策變更或終止可能影響本服務功能。我們對第三方服務不負責任。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.5 名片掃描責任</h3>
+                            <p class="text-gray-700 text-sm">
+                                <strong>您須確保有權掃描他人名片。</strong>未經他人同意掃描、儲存或使用其名片資訊可能侵犯隱私權。我們不對您未經授權的行為負責。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 rounded mb-4">
+                                <p class="font-bold text-gray-900 text-lg mb-2">
+                                    <span class="text-orange-900 font-bold">Important: Read This Disclaimer Carefully</span>
+                                </p>
+                                <p class="text-sm text-gray-700">
+                                    The Service is provided on an "AS IS" and "AS AVAILABLE" basis, without any warranties or guarantees, express or implied.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900">8.1 OCR Recognition Accuracy</h3>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>We do not guarantee OCR accuracy.</strong> Card scanning and AI recognition rely on third-party technology (Google Vision AI, Gemini AI), affected by:
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• Card design, fonts, colors</li>
+                                    <li>• Photo angle, lighting conditions</li>
+                                    <li>• Card damage or dirt</li>
+                                    <li>• Mixed languages (Chinese/English)</li>
+                                </ul>
+                                <p class="text-sm text-gray-700 mt-3 font-semibold">
+                                    ✋ <strong>Your Responsibility</strong>: Recognition results are for reference only. You must verify and correct information. We are not liable for any losses due to recognition errors.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.2 Data Loss and Sync Failures</h3>
+                            <div class="bg-red-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>We are not responsible for data loss.</strong> Situations that may cause data loss include:
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• Device failure, loss, or damage</li>
+                                    <li>• App uninstallation or reinstallation</li>
+                                    <li>• OS updates or resets</li>
+                                    <li>• APP uninstallation or data clearing</li>
+                                    <li>• OCR service interruptions (network issues, API quota limits)</li>
+                                    <li>• Third-party service interruptions (Google Cloud API)</li>
+                                </ul>
+                                <p class="text-sm text-gray-700 mt-3 font-semibold">
+                                    💾 <strong>Backup Recommendation</strong>: We strongly recommend regularly backing up your contacts using the "Export Data" feature.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.3 Service Availability</h3>
+                            <p class="text-gray-700 text-sm">
+                                We do not guarantee the Service will be:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• Uninterrupted, timely, or error-free</li>
+                                <li>• Always available or crash-free</li>
+                                <li>• Free from viruses or harmful components</li>
+                                <li>• Meeting your specific needs or expectations</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.4 Third-Party Service Dependencies</h3>
+                            <p class="text-gray-700 text-sm">
+                                The Service relies on third-party services (Google Vision AI, Supabase, Gemini AI, etc.). Interruptions, policy changes, or termination of these services may affect our functionality. We are not responsible for third-party services.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">8.5 Business Card Scanning Responsibility</h3>
+                            <p class="text-gray-700 text-sm">
+                                <strong>You must ensure you have the right to scan others' business cards.</strong> Scanning, storing, or using card information without consent may violate privacy rights. We are not responsible for your unauthorized actions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 9: Limitation of Liability -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center text-white text-sm mr-3">9</span>
+                        <span class="lang-zh">責任限制</span>
+                        <span class="lang-en hidden">Limitation of Liability</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <div class="bg-red-50 border-2 border-red-300 p-4 rounded">
+                                <p class="text-gray-700 leading-relaxed">
+                                    在法律允許的最大範圍內，<strong>我們對以下情況不負任何責任</strong>：
+                                </p>
+                                <ul class="space-y-2 text-gray-700 text-sm mt-3">
+                                    <li>① 任何間接、偶然、特殊、懲罰性或後果性損害</li>
+                                    <li>② 利潤損失、收入損失、資料遺失、商譽損失</li>
+                                    <li>③ 服務中斷、延遲或無法使用</li>
+                                    <li>④ 第三方服務的任何問題或損害</li>
+                                    <li>⑤ 因您違反本條款而產生的損失</li>
+                                </ul>
+                            </div>
+                            
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                <strong>責任上限</strong>：若法律不允許完全免責，我們對本服務造成的任何損害之總責任，<strong>不超過您在過去 12 個月內支付給我們的訂閱費用</strong>（如為免費用戶，則責任上限為新台幣 100 元）。
+                            </p>
+                            
+                            <p class="text-gray-700 text-sm">
+                                某些管轄區不允許排除或限制某些損害賠償，因此上述限制可能不適用於您。在此情況下，我們的責任將限制在法律允許的最大範圍內。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <div class="bg-red-50 border-2 border-red-300 p-4 rounded">
+                                <p class="text-gray-700 leading-relaxed">
+                                    To the maximum extent permitted by law, <strong>we are not liable for</strong>:
+                                </p>
+                                <ul class="space-y-2 text-gray-700 text-sm mt-3">
+                                    <li>① Any indirect, incidental, special, punitive, or consequential damages</li>
+                                    <li>② Loss of profits, revenue, data, or goodwill</li>
+                                    <li>③ Service interruptions, delays, or inability to use</li>
+                                    <li>④ Any issues or damages from third-party services</li>
+                                    <li>⑤ Losses arising from your violation of these Terms</li>
+                                </ul>
+                            </div>
+                            
+                            <p class="text-gray-700 text-sm leading-relaxed">
+                                <strong>Liability Cap</strong>: If law doesn't permit complete exemption, our total liability for any damages from the Service <strong>shall not exceed the subscription fees you paid us in the past 12 months</strong> (for free users, the cap is NT$100).
+                            </p>
+                            
+                            <p class="text-gray-700 text-sm">
+                                Some jurisdictions don't allow exclusion or limitation of certain damages, so these limitations may not apply to you. In such cases, our liability will be limited to the maximum extent permitted by law.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 10: Advertising -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">10</span>
+                        <span class="lang-zh">廣告</span>
+                        <span class="lang-en hidden">Advertising</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">10.1 廣告顯示</h3>
+                            <p class="text-gray-700">
+                                免費版本的本服務會透過 <strong>Google AdMob</strong> 顯示第三方廣告。廣告類型包括：
+                            </p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span><strong>橫幅廣告</strong>：顯示於畫面頂部或底部</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">🖼️</span>
+                                    <span><strong>插頁式廣告</strong>：全螢幕廣告，於特定時機顯示（如完成掃描後）</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">🎯</span>
+                                    <span><strong>原生廣告</strong>：與內容融合的廣告形式</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.2 廣告追蹤與隱私</h3>
+                            <div class="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>iOS 用戶</strong>：依據 Apple 的 ATT（App Tracking Transparency）政策，我們會在首次啟動時請求您的追蹤授權。您可選擇允許或拒絕廣告追蹤。
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>Android 用戶</strong>：您可在「設定 > Google > 廣告」中管理廣告個人化設定。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.3 廣告內容免責</h3>
+                            <p class="text-gray-700 text-sm">
+                                廣告內容由第三方廣告商提供。我們對廣告內容的準確性、合法性、適當性不負責任。若您點擊廣告並訪問外部網站或購買商品/服務，該行為受該第三方的條款與政策約束。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.4 移除廣告</h3>
+                            <p class="text-gray-700 text-sm">
+                                升級至<strong>訂閱方案</strong>即可享受完全無廣告的使用體驗。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">10.1 Ad Display</h3>
+                            <p class="text-gray-700">
+                                The free version displays third-party ads via <strong>Google AdMob</strong>. Ad types include:
+                            </p>
+                            <ul class="space-y-2 text-gray-700 text-sm">
+                                <li class="flex items-start">
+                                    <span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span><strong>Banner Ads</strong>: Displayed at top or bottom of screen</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">🖼️</span>
+                                    <span><strong>Interstitial Ads</strong>: Full-screen ads shown at specific times (e.g., after scanning)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">🎯</span>
+                                    <span><strong>Native Ads</strong>: Ads blended with content</span>
+                                </li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.2 Ad Tracking and Privacy</h3>
+                            <div class="bg-cyan-50 border-l-4 border-cyan-500 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    <strong>iOS Users</strong>: Per Apple's ATT (App Tracking Transparency) policy, we'll request tracking authorization on first launch. You can allow or deny ad tracking.
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>Android Users</strong>: Manage ad personalization in "Settings > Google > Ads".
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.3 Ad Content Disclaimer</h3>
+                            <p class="text-gray-700 text-sm">
+                                Ad content is provided by third-party advertisers. We are not responsible for the accuracy, legality, or appropriateness of ad content. If you click ads and visit external sites or purchase goods/services, such actions are subject to third-party terms and policies.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">10.4 Ad Removal</h3>
+                            <p class="text-gray-700 text-sm">
+                                Upgrade to a <strong>subscription plan</strong> for a completely ad-free experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 11: Third-Party Services -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">11</span>
+                        <span class="lang-zh">第三方服務與連結</span>
+                        <span class="lang-en hidden">Third-Party Services and Links</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">11.1 整合的第三方服務</h3>
+                            <p class="text-gray-700 text-sm">為提供完整功能，本服務整合以下第三方服務：</p>
+                            
+                            <div class="space-y-2">
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">🤖 Google Vision AI</p>
+                                    <p class="text-xs text-gray-600">用途：OCR 文字辨識</p>
+                                    <a href="https://cloud.google.com/vision" class="text-xs text-blue-600 hover:underline">了解更多 →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">🧠 Gemini AI</p>
+                                    <p class="text-xs text-gray-600">用途：智能資料解析與組織</p>
+                                    <a href="https://ai.google.dev/" class="text-xs text-blue-600 hover:underline">了解更多 →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">💾 Supabase</p>
+                                    <p class="text-xs text-gray-600">用途：雲端資料庫與儲存</p>
+                                    <a href="https://supabase.com" class="text-xs text-blue-600 hover:underline">了解更多 →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">Google AdMob</p>
+                                    <p class="text-xs text-gray-600">用途：廣告展示（僅免費版）</p>
+                                    <a href="https://admob.google.com" class="text-xs text-blue-600 hover:underline">了解更多 →</a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">11.2 第三方連結</h3>
+                            <p class="text-gray-700 text-sm">
+                                本服務可能包含通往第三方網站或服務的連結。這些第三方網站不受我們控制，我們不對其內容、隱私政策或做法負責。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">11.3 第三方政策</h3>
+                            <p class="text-gray-700 text-sm">
+                                使用第三方服務時，您需遵守其各自的使用條款與隱私政策。我們建議您在使用前詳細閱讀。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">11.1 Integrated Third-Party Services</h3>
+                            <p class="text-gray-700 text-sm">To provide full functionality, we integrate the following third-party services:</p>
+                            
+                            <div class="space-y-2">
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">🤖 Google Vision AI</p>
+                                    <p class="text-xs text-gray-600">Purpose: OCR text recognition</p>
+                                    <a href="https://cloud.google.com/vision" class="text-xs text-blue-600 hover:underline">Learn more →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">🧠 Gemini AI</p>
+                                    <p class="text-xs text-gray-600">Purpose: Intelligent data parsing and organization</p>
+                                    <a href="https://ai.google.dev/" class="text-xs text-blue-600 hover:underline">Learn more →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">💾 Supabase</p>
+                                    <p class="text-xs text-gray-600">Purpose: Cloud database and storage</p>
+                                    <a href="https://supabase.com" class="text-xs text-blue-600 hover:underline">Learn more →</a>
+                                </div>
+                                
+                                <div class="bg-teal-50 p-3 rounded">
+                                    <p class="font-semibold text-gray-900 text-sm">Google AdMob</p>
+                                    <p class="text-xs text-gray-600">Purpose: Ad display (free version only)</p>
+                                    <a href="https://admob.google.com" class="text-xs text-blue-600 hover:underline">Learn more →</a>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">11.2 Third-Party Links</h3>
+                            <p class="text-gray-700 text-sm">
+                                The Service may contain links to third-party websites or services. These are not under our control, and we are not responsible for their content, privacy policies, or practices.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">11.3 Third-Party Policies</h3>
+                            <p class="text-gray-700 text-sm">
+                                When using third-party services, you must comply with their respective terms and privacy policies. We recommend reading them carefully before use.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 12: Privacy and Data Protection -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white text-sm mr-3">12</span>
+                        <span class="lang-zh">隱私與資料保護</span>
+                        <span class="lang-en hidden">Privacy and Data Protection</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700">
+                                您的隱私對我們極為重要。我們如何蒐集、使用、儲存和保護您的個人資料，詳見我們的<strong>隱私權保護政策</strong>。
+                            </p>
+                            
+                            <div class="bg-purple-50 border-l-4 border-purple-600 p-4 rounded">
+                                <p class="font-bold text-purple-900 mb-2">請閱讀完整隱私政策</p>
+                                <p class="text-sm text-gray-700">
+                                    使用本服務即表示您同意我們的隱私權保護政策。請訪問：
+                                </p>
+                                <a href="privacy.html" class="text-blue-600 hover:underline font-semibold">
+                                    https://aimingpian.com/privacy
+                                </a>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">12.1 資料安全</h3>
+                            <p class="text-gray-700 text-sm">
+                                我們採用業界標準的安全措施保護您的資料，包括：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• SecureStore 硬體級保護（敏感資料）</li>
+                                <li>• SHA-256 雜湊混淆（大型資料）</li>
+                                <li>• HTTPS/TLS 安全傳輸</li>
+                                <li>• 定期安全稽核與更新</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">12.2 您的資料權利</h3>
+                            <p class="text-gray-700 text-sm">
+                                您有權查閱、更正、刪除、匯出您的個人資料。詳見隱私政策第 8 條。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700">
+                                Your privacy is extremely important to us. How we collect, use, store, and protect your personal data is detailed in our <strong>Privacy Policy</strong>.
+                            </p>
+                            
+                            <div class="bg-purple-50 border-l-4 border-purple-600 p-4 rounded">
+                                <p class="font-bold text-purple-900 mb-2">Read Full Privacy Policy</p>
+                                <p class="text-sm text-gray-700">
+                                    By using the Service, you agree to our Privacy Policy. Visit:
+                                </p>
+                                <a href="privacy.html" class="text-blue-600 hover:underline font-semibold">
+                                    https://aimingpian.com/privacy
+                                </a>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">12.1 Data Security</h3>
+                            <p class="text-gray-700 text-sm">
+                                We employ industry-standard security measures to protect your data, including:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• SecureStore hardware-level protection (sensitive data)</li>
+                                <li>• SHA-256 hash obfuscation (large data)</li>
+                                <li>• HTTPS/TLS secure transmission</li>
+                                <li>• Regular security audits and updates</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">12.2 Your Data Rights</h3>
+                            <p class="text-gray-700 text-sm">
+                                You have the right to access, correct, delete, and export your personal data. See Privacy Policy Section 8.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 13: GDPR and CCPA Terms -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-sm mr-3">13</span>
+                        <span class="lang-zh">GDPR 與 CCPA 條款</span>
+                        <span class="lang-en hidden">GDPR and CCPA Terms</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">13.1 歐盟用戶（GDPR）</h3>
+                            <div class="bg-blue-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm mb-2">
+                                    若您位於歐洲經濟區（EEA）、英國或瑞士，您享有《歐盟通用資料保護規則》（GDPR）賦予的以下權利：
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>存取權</strong>：查閱我們持有的您的個人資料</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>更正權</strong>：要求更正不準確的資料</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>刪除權（被遺忘權）</strong>：要求刪除您的個人資料</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>限制處理權</strong>：在特定情況下限制資料處理</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>資料可攜權</strong>：以結構化格式取得資料副本</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>反對權</strong>：反對基於正當利益的資料處理</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>撤回同意權</strong>：隨時撤回您的同意</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>投訴權</strong>：向資料保護機關提出投訴</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <p class="text-gray-700 text-sm">
+                                <strong>法律依據</strong>：我們處理您的資料基於：(a) 履行契約、(b) 您的同意、(c) 法律義務、或 (d) 正當利益。
+                            </p>
+                            
+                            <p class="text-gray-700 text-sm">
+                                <strong>資料傳輸</strong>：您的資料可能傳輸至歐盟以外地區（如美國、台灣）。我們確保採用適當的保護措施（如標準契約條款）。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">13.2 加州用戶（CCPA）</h3>
+                            <div class="bg-blue-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm mb-2">
+                                    若您是加州居民，您享有《加州消費者隱私法》（CCPA）賦予的以下權利：
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>知情權</strong>：了解我們蒐集哪些個人資訊</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>刪除權</strong>：要求刪除您的個人資訊</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>選擇退出權</strong>：選擇退出個人資訊的出售（我們不出售個人資訊）</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>不歧視權</strong>：行使權利時不受歧視待遇</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong>✅ 我們不出售您的個人資訊</strong><br>
+                                    我們從未、也永遠不會將您的個人資訊出售給第三方。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">13.3 如何行使您的權利</h3>
+                            <p class="text-gray-700 text-sm">
+                                若要行使上述權利，請透過電子郵件聯絡我們：<br>
+                                <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-semibold">aibusinesscardmanager@gmail.com</a>
+                            </p>
+                            <p class="text-gray-700 text-sm">
+                                我們將在 <strong>30 天內</strong>回覆您的請求。為確認您的身分，我們可能要求您提供額外資訊。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">13.1 EU Users (GDPR)</h3>
+                            <div class="bg-blue-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm mb-2">
+                                    If you're located in the European Economic Area (EEA), UK, or Switzerland, you have the following rights under the General Data Protection Regulation (GDPR):
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Access</strong>: View your personal data we hold</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Rectification</strong>: Request correction of inaccurate data</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Erasure (Right to be Forgotten)</strong>: Request deletion of your data</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Restriction</strong>: Restrict data processing in certain circumstances</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Data Portability</strong>: Obtain data copy in structured format</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Object</strong>: Object to processing based on legitimate interests</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Withdraw Consent</strong>: Withdraw consent at any time</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Lodge Complaint</strong>: File complaint with data protection authority</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <p class="text-gray-700 text-sm">
+                                <strong>Legal Basis</strong>: We process your data based on: (a) contract performance, (b) consent, (c) legal obligation, or (d) legitimate interests.
+                            </p>
+                            
+                            <p class="text-gray-700 text-sm">
+                                <strong>Data Transfers</strong>: Your data may be transferred outside the EU (e.g., US, Taiwan). We ensure appropriate safeguards (e.g., standard contractual clauses).
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">13.2 California Users (CCPA)</h3>
+                            <div class="bg-blue-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm mb-2">
+                                    If you're a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-2">
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Right to Know</strong>: Know what personal information we collect</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Right to Delete</strong>: Request deletion of your personal information</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Right to Opt-Out</strong>: Opt out of sale of personal info (we don't sell)</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                                        <span><strong>Right to Non-Discrimination</strong>: No discrimination for exercising rights</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong>✅ We Do NOT Sell Your Personal Information</strong><br>
+                                    We have never and will never sell your personal information to third parties.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">13.3 How to Exercise Your Rights</h3>
+                            <p class="text-gray-700 text-sm">
+                                To exercise the above rights, contact us via email:<br>
+                                <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-semibold">aibusinesscardmanager@gmail.com</a>
+                            </p>
+                            <p class="text-gray-700 text-sm">
+                                We'll respond to your request within <strong>30 days</strong>. We may request additional information to verify your identity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 14: Termination -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-gray-600 rounded-lg flex items-center justify-center text-white text-sm mr-3">14</span>
+                        <span class="lang-zh">服務終止</span>
+                        <span class="lang-en hidden">Termination</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <h3 class="font-semibold text-gray-900">14.1 您的終止權</h3>
+                            <p class="text-gray-700 text-sm">
+                                您可隨時停止使用本服務，並透過以下方式刪除您的帳號：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• 在 App 內：「設定 > 帳號管理 > 刪除帳號」</li>
+                                <li>• 透過電子郵件聯絡我們</li>
+                            </ul>
+                            <p class="text-gray-700 text-sm mt-2">
+                                帳號刪除後，您的所有資料將在 <strong>30 天內</strong>永久刪除且無法復原。
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">14.2 我們的終止權</h3>
+                            <p class="text-gray-700 text-sm">
+                                若您違反本條款或從事非法、有害、濫用行為，我們保留立即暫停或終止您帳號的權利，無需事先通知。終止原因包括但不限於：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• 違反本條款或適用法律</li>
+                                <li>• 長期不活躍（超過 2 年未登入）</li>
+                                <li>• 涉及詐欺、濫用或安全威脅</li>
+                                <li>• 提供虛假資訊或冒用他人身分</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">14.3 終止後的影響</h3>
+                            <p class="text-gray-700 text-sm">
+                                帳號終止後：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• 您將立即失去存取服務的權利</li>
+                                <li>• 未到期的訂閱費用不予退還（除非適用法律另有規定）</li>
+                                <li>• 您的資料將按照隱私政策處理與刪除</li>
+                                <li>• 本條款中性質上應存續的條款（如免責、責任限制）將繼續有效</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <h3 class="font-semibold text-gray-900">14.1 Your Right to Terminate</h3>
+                            <p class="text-gray-700 text-sm">
+                                You may stop using the Service and delete your account anytime via:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• In-app: "Settings > Account Management > Delete Account"</li>
+                                <li>• Contact us via email</li>
+                            </ul>
+                            <p class="text-gray-700 text-sm mt-2">
+                                After account deletion, all your data will be permanently deleted within <strong>30 days</strong> and cannot be recovered.
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">14.2 Our Right to Terminate</h3>
+                            <p class="text-gray-700 text-sm">
+                                If you violate these Terms or engage in illegal, harmful, or abusive conduct, we reserve the right to immediately suspend or terminate your account without prior notice. Reasons include but are not limited to:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• Violation of these Terms or applicable laws</li>
+                                <li>• Long-term inactivity (over 2 years without login)</li>
+                                <li>• Fraud, abuse, or security threats</li>
+                                <li>• Providing false information or impersonation</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">14.3 Effect of Termination</h3>
+                            <p class="text-gray-700 text-sm">
+                                After account termination:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• You immediately lose access to the Service</li>
+                                <li>• Unused subscription fees are non-refundable (unless required by law)</li>
+                                <li>• Your data will be handled and deleted per our Privacy Policy</li>
+                                <li>• Terms that by nature should survive (disclaimers, liability limits) remain in effect</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 15: Changes to Terms -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">15</span>
+                        <span class="lang-zh">條款變更</span>
+                        <span class="lang-en hidden">Changes to Terms</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700">
+                                我們可能會不時更新本使用條款。變更原因可能包括：
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• 法律或法規要求</li>
+                                <li>• 新功能或服務推出</li>
+                                <li>• 安全性或隱私保護強化</li>
+                                <li>• 業務模式調整</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">變更通知方式</h3>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <strong>一般變更</strong>：更新後的條款將發布於本網頁及 App 內，生效日期標註於頂部。
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <strong>重大變更</strong>：若涉及實質性權利義務調整（如訂閱價格、資料使用目的、責任限制等），我們將提前至少 <strong>30 天</strong>透過以下方式通知您：
+                                    <ul class="ml-4 mt-2">
+                                        <li>• App 內推播通知</li>
+                                        <li>• 電子郵件通知</li>
+                                        <li>• 網站公告</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">您的選擇</h3>
+                            <p class="text-gray-700 text-sm">
+                                若您不同意修訂後的條款，請在生效日期前停止使用本服務並刪除您的帳號。繼續使用本服務即表示您接受並同意受修訂後條款約束。
+                            </p>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700">
+                                We may update these Terms from time to time. Reasons may include:
+                            </p>
+                            <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                                <li>• Legal or regulatory requirements</li>
+                                <li>• New features or services</li>
+                                <li>• Enhanced security or privacy protection</li>
+                                <li>• Business model adjustments</li>
+                            </ul>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">Change Notification</h3>
+                            <div class="space-y-2 text-sm text-gray-700">
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <strong>General Changes</strong>: Updated Terms will be posted on this webpage and in-app, with effective date noted at top.
+                                </div>
+                                <div class="bg-amber-50 p-3 rounded">
+                                    <strong>Material Changes</strong>: For substantial changes affecting rights and obligations (e.g., subscription pricing, data use purposes, liability limits), we'll notify you at least <strong>30 days</strong> in advance via:
+                                    <ul class="ml-4 mt-2">
+                                        <li>• In-app push notifications</li>
+                                        <li>• Email notifications</li>
+                                        <li>• Website announcements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">Your Choice</h3>
+                            <p class="text-gray-700 text-sm">
+                                If you don't agree with the revised Terms, stop using the Service and delete your account before the effective date. Continued use constitutes acceptance of the revised Terms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 16: Dispute Resolution -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center text-white text-sm mr-3">16</span>
+                        <span class="lang-zh">爭議解決</span>
+                        <span class="lang-en hidden">Dispute Resolution</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                若您與我們之間產生任何爭議或糾紛，我們鼓勵透過友好協商解決。若無法協商解決，請依照以下步驟處理：
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                                步驟一：友好協商（必要前置程序）
+                            </h3>
+                            <div class="bg-green-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    首先，請透過電子郵件 <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a> 聯絡我們，說明爭議的詳細情況。
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    我們承諾在收到通知後 <strong>7 個工作天內</strong>回覆，並盡最大努力與您協商解決。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">⚖️ 步驟二：調解程序（優先選擇）</h3>
+                            <div class="bg-green-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    若協商無法解決爭議，<strong>雙方同意優先透過調解程序處理</strong>。調解機構可選擇：
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• <strong>台灣消費者保護協會</strong>（針對消費爭議）</li>
+                                    <li>• <strong>中華民國仲裁協會</strong></li>
+                                    <li>• 雙方協議認可的其他調解機構</li>
+                                </ul>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    調解費用由雙方平均分擔，除非調解結果另有約定。
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">🏛️ 步驟三：訴訟（最後手段）</h3>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    若經調解仍無法達成協議，或任一方拒絕參與調解，雙方同意將爭議提交訴訟解決。
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>管轄法院</strong>：以<strong class="text-green-700">台灣台北地方法院</strong>為第一審管轄法院。但若法律有專屬管轄或強制管轄之規定者，從其規定。
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>適用法律</strong>：本條款及任何爭議應適用<strong class="text-green-700">中華民國法律</strong>（不適用其法律衝突原則）。
+                                </p>
+                            </div>
+                            
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-gray-900">重要提醒</strong>：提起訴訟前，您必須先完成步驟一（協商）與步驟二（調解）的善意嘗試，除非有急迫的法律原因（如緊急禁制令）。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                If a dispute arises between you and us, we encourage resolving it through friendly negotiation. If negotiation fails, follow these steps:
+                            </p>
+                            
+                            <h3 class="font-semibold text-gray-900 flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                                Step 1: Friendly Negotiation (Mandatory Prerequisite)
+                            </h3>
+                            <div class="bg-green-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    First, contact us via email at <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a> explaining the dispute in detail.
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    We commit to responding within <strong>7 business days</strong> and making our best effort to negotiate a resolution.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">⚖️ Step 2: Mediation (Preferred Option)</h3>
+                            <div class="bg-green-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    If negotiation fails, <strong>both parties agree to prioritize mediation</strong>. Mediation institutions may include:
+                                </p>
+                                <ul class="text-sm text-gray-700 space-y-1 mt-2 ml-4">
+                                    <li>• <strong>Consumers' Foundation, Taiwan</strong> (for consumer disputes)</li>
+                                    <li>• <strong>Chinese Arbitration Association, Taipei</strong></li>
+                                    <li>• Other mutually agreed mediation institutions</li>
+                                </ul>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    Mediation costs shared equally unless mediation outcome specifies otherwise.
+                                </p>
+                            </div>
+                            
+                            <h3 class="font-semibold text-gray-900 pt-4">🏛️ Step 3: Litigation (Last Resort)</h3>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <p class="text-gray-700 text-sm">
+                                    If mediation fails or either party refuses to participate, both parties agree to submit the dispute to litigation.
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>Jurisdiction</strong>: <strong class="text-green-700">Taipei District Court, Taiwan</strong> shall have jurisdiction as the court of first instance. However, if law provides for exclusive or mandatory jurisdiction, such provisions shall apply.
+                                </p>
+                                <p class="text-gray-700 text-sm mt-2">
+                                    <strong>Governing Law</strong>: These Terms and any disputes shall be governed by the <strong class="text-green-700">laws of the Republic of China (Taiwan)</strong> (excluding conflict of law principles).
+                                </p>
+                            </div>
+                            
+                            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+                                <p class="text-sm text-gray-700">
+                                    <strong class="text-gray-900">Important</strong>: Before filing a lawsuit, you must make good faith attempts at Steps 1 (negotiation) and 2 (mediation), unless urgent legal reasons exist (e.g., emergency injunction).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 17: Miscellaneous -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-slate-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">17</span>
+                        <span class="lang-zh">其他條款</span>
+                        <span class="lang-en hidden">Miscellaneous</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4 text-sm text-gray-700">
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.1 完整協議</h3>
+                                <p>本條款（連同隱私政策）構成您與我們之間關於本服務的完整協議，取代先前所有的口頭或書面協議。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.2 可分割性</h3>
+                                <p>若本條款的任何條款被認定為無效、違法或無法執行，該條款應在最小必要範圍內修改或刪除，其餘條款仍保持完全效力。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.3 權利不棄權</h3>
+                                <p>我們未行使或延遲行使本條款下的任何權利或救濟，不構成對該權利或救濟的放棄。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.4 不可轉讓</h3>
+                                <p>您不得在未經我們事先書面同意的情況下，轉讓或轉移您在本條款下的權利或義務。我們可自由轉讓本條款（如企業併購時）。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.5 語言版本</h3>
+                                <p>本條款提供繁體中文與英文版本。若中英文版本有任何歧義或不一致，<strong>以繁體中文版本為準</strong>。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.6 通知</h3>
+                                <p>我們可透過電子郵件、App 推播、網站公告等方式向您發送通知。您透過註冊時提供的電子郵件地址即視為有效的通知地址。</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.7 不可抗力</h3>
+                                <p>因不可抗力事件（如天災、戰爭、政府行為、網路攻擊、疫情等）導致我們無法履行本條款義務時，我們不負責任。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4 text-sm text-gray-700">
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.1 Entire Agreement</h3>
+                                <p>These Terms (together with the Privacy Policy) constitute the entire agreement between you and us regarding the Service, superseding all prior oral or written agreements.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.2 Severability</h3>
+                                <p>If any provision of these Terms is deemed invalid, illegal, or unenforceable, that provision shall be modified or removed to the minimum extent necessary, with remaining provisions staying in full effect.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.3 No Waiver</h3>
+                                <p>Our failure or delay in exercising any right or remedy under these Terms doesn't constitute a waiver of that right or remedy.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.4 Assignment</h3>
+                                <p>You may not assign or transfer your rights or obligations under these Terms without our prior written consent. We may freely assign these Terms (e.g., in merger/acquisition).</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.5 Language Versions</h3>
+                                <p>These Terms are provided in Traditional Chinese and English. In case of discrepancies, <strong>the Traditional Chinese version shall prevail</strong>.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.6 Notices</h3>
+                                <p>We may send notices via email, app push notifications, or website announcements. The email address you provided during registration is considered a valid notice address.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="font-semibold text-gray-900 mb-2">17.7 Force Majeure</h3>
+                                <p>We're not liable for failure to perform obligations due to force majeure events (natural disasters, war, government actions, cyber attacks, pandemics, etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 18: Contact Information -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border-2 border-blue-200">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                        <span class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white text-sm mr-3">18</span>
+                        <span class="lang-zh">聯絡我們</span>
+                        <span class="lang-en hidden">Contact Us</span>
+                    </h2>
+                    
+                    <div class="max-w-4xl">
+                        <div class="lang-zh space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                若您對本使用條款有任何疑問、意見或需要協助，歡迎透過以下方式聯絡我們：
+                            </p>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm space-y-3">
+                                <div class="flex items-start">
+                                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">電子郵件</p>
+                                        <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-semibold">
+                                            aibusinesscardmanager@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">🌐</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">官方網站</p>
+                                        <a href="https://aimingpian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
+                                            https://aimingpian.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">👤</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">開發者</p>
+                                        <p class="text-gray-700">劉亦恩</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">⏱️</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">回覆時間</p>
+                                        <p class="text-gray-700 text-sm">我們將於收到您的訊息後 <strong>3-7 個工作天內</strong>回覆</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
+                            <p class="text-gray-700 leading-relaxed">
+                                If you have any questions, comments, or need assistance regarding these Terms, please contact us:
+                            </p>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-sm space-y-3">
+                                <div class="flex items-start">
+                                    <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Email</p>
+                                        <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-semibold">
+                                            aibusinesscardmanager@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">🌐</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Official Website</p>
+                                        <a href="https://aimingpian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">
+                                            https://aimingpian.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">👤</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Developer</p>
+                                        <p class="text-gray-700">Yi-En Liu (劉亦恩)</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <span class="text-2xl mr-3">⏱️</span>
+                                    <div>
+                                        <p class="font-semibold text-gray-900">Response Time</p>
+                                        <p class="text-gray-700 text-sm">We'll respond within <strong>3-7 business days</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Closing Statement -->
+                    <div class="mt-8 pt-6 border-t-2 border-blue-200">
+                        <div class="text-center">
+                            <p class="text-gray-600 text-sm lang-zh">
+                                感謝您閱讀並同意本使用條款。我們致力於提供優質、安全、可靠的服務。
+                            </p>
+                            <p class="text-gray-600 text-sm lang-en hidden">
+                                Thank you for reading and agreeing to these Terms. We're committed to providing quality, secure, and reliable service.
+                            </p>
+                            <p class="text-gray-500 text-xs mt-4">
+                                <span class="lang-zh">最後更新：2025 年 1 月 1 日 | 版本 1.0</span>
+                                <span class="lang-en hidden">Last Updated: January 1, 2025 | Version 1.0</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-sm mb-4">
+                    <span class="lang-zh">© 2025 AI 名片經理. 版權所有.</span>
+                    <span class="lang-en hidden">© 2025 AI Business Card Manager. All rights reserved.</span>
+                </p>
+                <div class="flex justify-center space-x-6">
+                    <a href="index.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
+                    <a href="privacy.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
+                    <a href="terms-of-service.html" class="hover:text-blue-400 transition">
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/main.js"></script>
+</body>
+</html>
+
