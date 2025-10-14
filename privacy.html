@@ -244,10 +244,6 @@
                                     <span><strong>相機權限：</strong>用於掃描名片影像（必要）</span>
                                 </li>
                                 <li class="flex items-start">
-                                    <span class="text-blue-500 mr-2">📇</span>
-                                    <span><strong>通訊錄權限：</strong>用於同步至裝置通訊錄（選用）</span>
-                                </li>
-                                <li class="flex items-start">
                                     <span class="text-blue-500 mr-2">📂</span>
                                     <span><strong>儲存權限：</strong>用於匯入/匯出名片資料（選用）</span>
                                 </li>
@@ -345,10 +341,6 @@
                                 <li class="flex items-start">
                                     <span class="text-blue-500 mr-2">📷</span>
                                     <span><strong>Camera:</strong> Required for scanning business cards</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-blue-500 mr-2">📇</span>
-                                    <span><strong>Contacts:</strong> Optional, for syncing to device contacts</span>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="text-blue-500 mr-2">📂</span>
@@ -547,7 +539,7 @@
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                                    <span><strong>資料備份：</strong>自動化備份機制，確保資料可復原性</span>
+                                    <span><strong>資料匯出：</strong>您可隨時匯出聯絡人資料為 CSV 格式進行備份</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -614,7 +606,7 @@
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                                    <span><strong>Data Backup:</strong> Automated backup mechanisms ensure data recoverability</span>
+                                    <span><strong>Data Export:</strong> You can export your contact data to CSV format for backup at any time</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -741,7 +733,7 @@
                             <ul class="space-y-2 text-gray-700 text-sm">
                                 <li class="flex items-start">
                                     <span class="text-purple-500 mr-2">①</span>
-                                    <span><strong>服務供應商：</strong>為提供核心服務功能（OCR、雲端儲存等）而與上述第三方服務共享必要資料</span>
+                                    <span><strong>服務供應商：</strong>為提供核心服務功能（OCR 文字辨識、AI 資料解析等）而與上述第三方服務共享必要資料</span>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="text-purple-500 mr-2">②</span>
@@ -810,7 +802,7 @@
                             <ul class="space-y-2 text-gray-700 text-sm">
                                 <li class="flex items-start">
                                     <span class="text-purple-500 mr-2">①</span>
-                                    <span><strong>Service Providers:</strong> To provide core service functionality (OCR, cloud storage, etc.) with the above third-party services</span>
+                                    <span><strong>Service Providers:</strong> To provide core service functionality (OCR text recognition, AI data parsing, etc.) with the above third-party services</span>
                                 </li>
                                 <li class="flex items-start">
                                     <span class="text-purple-500 mr-2">②</span>
@@ -942,10 +934,6 @@
                                     <p class="mt-1">保留 <strong>180 天</strong>，用於安全性監控與服務改善，到期後自動刪除。</p>
                                 </li>
                                 <li class="bg-amber-50 p-3 rounded-lg">
-                                    <strong class="text-gray-900">備份資料：</strong>
-                                    <p class="mt-1">安全備份資料於刪除後最長保留 <strong>90 天</strong>，以確保資料完整性與可復原性。</p>
-                                </li>
-                                <li class="bg-amber-50 p-3 rounded-lg">
                                     <strong class="text-gray-900">訂閱與付費記錄：</strong>
                                     <p class="mt-1">保留 <strong>7 年</strong>，用於會計與稅務目的，符合法律要求。</p>
                                 </li>
@@ -983,10 +971,6 @@
                                 <li class="bg-amber-50 p-3 rounded-lg">
                                     <strong class="text-gray-900">Usage Logs:</strong>
                                     <p class="mt-1">Retained for <strong>180 days</strong> for security monitoring and service improvement, then automatically deleted.</p>
-                                </li>
-                                <li class="bg-amber-50 p-3 rounded-lg">
-                                    <strong class="text-gray-900">Backup Data:</strong>
-                                    <p class="mt-1">Secure backup data retained for up to <strong>90 days</strong> after deletion to ensure data integrity and recoverability.</p>
                                 </li>
                                 <li class="bg-amber-50 p-3 rounded-lg">
                                     <strong class="text-gray-900">Legal Retention:</strong>
@@ -1062,7 +1046,7 @@
                                     <span class="text-2xl mr-3">📤</span>
                                     <div>
                                         <strong class="text-gray-900">資料可攜權（Data Portability）</strong>
-                                        <p class="text-sm text-gray-700 mt-1">您可要求以結構化、常用且機器可讀的格式（如 JSON、CSV）匯出您的資料。</p>
+                                        <p class="text-sm text-gray-700 mt-1">您可要求以結構化、常用且機器可讀的格式（CSV）匯出您的資料。</p>
                                     </div>
                                 </div>
                                 
@@ -1136,7 +1120,7 @@
                                     <span class="text-2xl mr-3">📤</span>
                                     <div>
                                         <strong class="text-gray-900">Data Portability</strong>
-                                        <p class="text-sm text-gray-700 mt-1">You may request to export your data in a structured, commonly used, and machine-readable format (e.g., JSON, CSV).</p>
+                                        <p class="text-sm text-gray-700 mt-1">You may request to export your data in a structured, commonly used, and machine-readable format (CSV).</p>
                                     </div>
                                 </div>
                             </div>
