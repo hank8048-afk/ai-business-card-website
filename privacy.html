@@ -6,7 +6,11 @@
     <title>AI 名片經理 隱私權保護政策 | Privacy Policy - AI Business Card Manager</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon.png">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <meta name="theme-color" content="#2563EB">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -219,6 +223,17 @@
                                         <li>• 使用時間與操作記錄</li>
                                     </ul>
                                 </div>
+                                
+                                <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
+                                    <h4 class="text-sm font-bold text-red-900 uppercase tracking-wide mb-2">訂閱與付費資訊</h4>
+                                    <ul class="text-sm text-gray-700 space-y-1 list-disc list-inside marker:text-red-400">
+                                        <li>訂閱狀態與到期時間</li>
+                                        <li>付費記錄（透過 App Store/Google Play）</li>
+                                        <li>訂閱取消與退款記錄</li>
+                                        <li>購買收據與交易 ID</li>
+                                        <li>訂閱方案選擇與變更記錄</li>
+                                    </ul>
+                                </div>
                             </div>
                             
                             <h3 class="font-semibold text-gray-900 text-lg pt-4">1.2 權限要求說明</h3>
@@ -265,6 +280,14 @@
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
                                     <span>維護系統安全、防範詐欺與濫用行為</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>處理訂閱付費、管理會員權益與服務</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                                    <span>顯示個人化廣告以維持免費服務</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
@@ -667,10 +690,12 @@
                             
                             <div class="space-y-3">
                                 <div class="bg-purple-50 p-3 rounded-lg">
-                                    <p class="font-semibold text-gray-900 text-sm">🤖 Google Vision AI</p>
-                                    <p class="text-xs text-gray-600">用途：OCR 名片辨識服務</p>
-                                    <p class="text-xs text-gray-600">傳輸資料：名片圖片影像</p>
-                                    <a href="https://cloud.google.com/terms/cloud-privacy-notice" class="text-xs text-blue-600 hover:underline">隱私權政策 →</a>
+                                    <p class="font-semibold text-gray-900 text-sm">🤖 Google Vision API</p>
+                                    <p class="text-xs text-gray-600">用途：OCR 名片文字辨識服務（核心功能）</p>
+                                    <p class="text-xs text-gray-600">傳輸資料：名片圖片（僅用於 OCR 文字辨識）</p>
+                                    <p class="text-xs text-gray-600">資料處理：圖片上傳至 Google Cloud 進行文字辨識，處理完成後立即刪除</p>
+                                    <p class="text-xs text-gray-600">資料保留：Google 不會儲存您的名片圖片</p>
+                                    <a href="https://cloud.google.com/terms/cloud-privacy-notice" class="text-xs text-blue-600 hover:underline">Google Cloud 隱私權政策 →</a>
                                 </div>
                                 
                                 <div class="bg-purple-50 p-3 rounded-lg">
@@ -685,6 +710,22 @@
                                     <p class="text-xs text-gray-600">用途：應用程式開發框架</p>
                                     <p class="text-xs text-gray-600">傳輸資料：錯誤日誌、當機報告（選用）</p>
                                     <a href="https://expo.dev/privacy" class="text-xs text-blue-600 hover:underline">隱私權政策 →</a>
+                                </div>
+                                
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-semibold text-gray-900 text-sm">💰 RevenueCat</p>
+                                    <p class="text-xs text-gray-600">用途：訂閱管理與付費處理服務</p>
+                                    <p class="text-xs text-gray-600">傳輸資料：訂閱狀態、付費記錄、設備識別碼、購買收據</p>
+                                    <p class="text-xs text-gray-600">資料處理：管理訂閱生命週期、處理退款、恢復購買</p>
+                                    <a href="https://www.revenuecat.com/privacy" class="text-xs text-blue-600 hover:underline">RevenueCat 隱私權政策 →</a>
+                                </div>
+                                
+                                <div class="bg-purple-50 p-3 rounded-lg">
+                                    <p class="font-semibold text-gray-900 text-sm">📺 Google AdMob</p>
+                                    <p class="text-xs text-gray-600">用途：顯示個人化廣告以維持免費服務</p>
+                                    <p class="text-xs text-gray-600">傳輸資料：廣告識別碼、使用行為、設備資訊、廣告互動</p>
+                                    <p class="text-xs text-gray-600">控制方式：可透過 App Tracking Transparency 控制</p>
+                                    <a href="https://policies.google.com/privacy" class="text-xs text-blue-600 hover:underline">Google AdMob 隱私權政策 →</a>
                                 </div>
                                 
                                 <div class="bg-purple-50 p-3 rounded-lg">
@@ -905,6 +946,14 @@
                                     <p class="mt-1">安全備份資料於刪除後最長保留 <strong>90 天</strong>，以確保資料完整性與可復原性。</p>
                                 </li>
                                 <li class="bg-amber-50 p-3 rounded-lg">
+                                    <strong class="text-gray-900">訂閱與付費記錄：</strong>
+                                    <p class="mt-1">保留 <strong>7 年</strong>，用於會計與稅務目的，符合法律要求。</p>
+                                </li>
+                                <li class="bg-amber-50 p-3 rounded-lg">
+                                    <strong class="text-gray-900">廣告互動記錄：</strong>
+                                    <p class="mt-1">保留 <strong>90 天</strong>，用於廣告效果分析與優化。</p>
+                                </li>
+                                <li class="bg-amber-50 p-3 rounded-lg">
                                     <strong class="text-gray-900">法律義務保留：</strong>
                                     <p class="mt-1">若因法律、會計或監管要求需保留特定資料，我們將依規定保留至法定期間屆滿。</p>
                                 </li>
@@ -1014,6 +1063,14 @@
                                     <div>
                                         <strong class="text-gray-900">資料可攜權（Data Portability）</strong>
                                         <p class="text-sm text-gray-700 mt-1">您可要求以結構化、常用且機器可讀的格式（如 JSON、CSV）匯出您的資料。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start bg-orange-50 p-4 rounded-lg">
+                                    <span class="text-2xl mr-3">💳</span>
+                                    <div>
+                                        <strong class="text-gray-900">訂閱管理權（Subscription Management）</strong>
+                                        <p class="text-sm text-gray-700 mt-1">您可隨時在 App Store 或 Google Play 中管理、取消或恢復訂閱。我們不會處理退款，退款需透過平台處理。</p>
                                     </div>
                                 </div>
                             </div>
