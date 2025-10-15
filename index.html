@@ -22,6 +22,15 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="theme-color" content="#2563EB">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FDCJCB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-54FDCJCB88');
+    </script>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -55,20 +64,20 @@
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#features" class="text-gray-600 hover:text-blue-600 transition">
-                        <span class="lang-zh">功能特色</span>
+                        <span class="lang-zh">功能</span>
                         <span class="lang-en hidden">Features</span>
                     </a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 transition">
+                        <span class="lang-zh">方案</span>
+                        <span class="lang-en hidden">Pricing</span>
+                    </a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition">
-                        <span class="lang-zh">常見問題</span>
+                        <span class="lang-zh">問答</span>
                         <span class="lang-en hidden">FAQ</span>
                     </a>
                     <a href="privacy.html" class="text-gray-600 hover:text-blue-600 transition">
-                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-zh">隱私</span>
                         <span class="lang-en hidden">Privacy</span>
-                    </a>
-                    <a href="terms-of-service.html" class="text-gray-600 hover:text-blue-600 transition">
-                        <span class="lang-zh">使用條款</span>
-                        <span class="lang-en hidden">Terms</span>
                     </a>
                     <a href="premium.html" class="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg hover:shadow-lg transition">
                         <span class="lang-zh">升級專業版</span>
@@ -93,20 +102,20 @@
             <!-- Mobile Menu -->
             <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 space-y-3">
                 <a href="#features" class="block text-gray-600 hover:text-blue-600 transition">
-                    <span class="lang-zh">功能特色</span>
+                    <span class="lang-zh">功能</span>
                     <span class="lang-en hidden">Features</span>
                 </a>
+                <a href="#pricing" class="block text-gray-600 hover:text-blue-600 transition">
+                    <span class="lang-zh">方案</span>
+                    <span class="lang-en hidden">Pricing</span>
+                </a>
                 <a href="#faq" class="block text-gray-600 hover:text-blue-600 transition">
-                    <span class="lang-zh">常見問題</span>
+                    <span class="lang-zh">問答</span>
                     <span class="lang-en hidden">FAQ</span>
                 </a>
                 <a href="privacy.html" class="block text-gray-600 hover:text-blue-600 transition">
-                    <span class="lang-zh">隱私政策</span>
+                    <span class="lang-zh">隱私</span>
                     <span class="lang-en hidden">Privacy</span>
-                </a>
-                <a href="terms-of-service.html" class="block text-gray-600 hover:text-blue-600 transition">
-                    <span class="lang-zh">使用條款</span>
-                    <span class="lang-en hidden">Terms</span>
                 </a>
                 <button id="langToggleMobile" class="w-full text-left px-3 py-2 bg-gray-100 rounded-lg">
                     <span class="lang-zh">切換至 English</span>
@@ -165,21 +174,21 @@
                 <!-- Left Column - Content -->
                 <div data-aos="fade-right" data-aos-duration="1000">
                     <!-- Main Headline -->
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
                         <span class="lang-zh">
-                            智慧掃描<br>
-                            <span class="gradient-text">秒存名片</span>
+                            不再遺失名片<br>
+                            <span class="gradient-text">3秒建檔永久保存</span>
                         </span>
                         <span class="lang-en hidden">
-                            Smart Scan<br>
-                            <span class="gradient-text">Instant Save</span>
+                            Never Lose A Card<br>
+                            <span class="gradient-text">3-Sec Save Forever</span>
                         </span>
                     </h1>
                     
                     <!-- Subheadline -->
-                    <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed max-w-xl">
-                        <span class="lang-zh">打造你的數位人脈庫，讓 <span class="font-semibold text-gray-900">Google Vision AI</span> 幫你管理每一張名片</span>
-                        <span class="lang-en hidden">Build your digital network with <span class="font-semibold text-gray-900">Google Vision AI</span> powered business card management</span>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
+                        <span class="lang-zh">收到名片總是塞抽屜？用 AI 幫你 3 秒掃描、自動整理、永久保存。從此告別紙本混亂，打造專業人脈資料庫。</span>
+                        <span class="lang-en hidden">Cards piling up in drawers? Let AI scan in 3 seconds, auto-organize, and save forever. Say goodbye to paper chaos, build a professional contact database.</span>
                     </p>
                     
                     <!-- Key Benefits -->
@@ -208,50 +217,45 @@
                     </div>
                     
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="#download" class="btn-primary group">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                            </svg>
-                            <span class="lang-zh">立即下載</span>
-                            <span class="lang-en hidden">Download Now</span>
-                            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+                        <!-- 主 CTA - 超級突出 -->
+                        <a href="#download" class="group inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl hover:bg-blue-700 transition-all">
+                            <span class="lang-zh">免費下載 App</span>
+                            <span class="lang-en hidden">Download Free</span>
+                            <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                             </svg>
                         </a>
-                        <a href="premium.html" class="btn-secondary group">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
-                            </svg>
-                            <span class="lang-zh">升級專業版</span>
-                            <span class="lang-en hidden">Go Premium</span>
+                        
+                        <!-- 次要 CTA - 低調 -->
+                        <a href="#pricing" class="inline-flex items-center justify-center px-6 py-4 text-gray-700 text-base hover:text-gray-900 transition">
+                            <span class="lang-zh">查看方案 →</span>
+                            <span class="lang-en hidden">See Plans →</span>
                         </a>
                     </div>
                     
-                    <!-- Trust Indicators -->
-                    <div class="flex flex-wrap items-center gap-6 text-sm text-gray-600">
+                    <!-- 風險逆轉元素 -->
+                    <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-600 mb-8">
                         <div class="flex items-center gap-2">
                             <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            <span class="font-medium lang-zh">完全免費使用</span>
-                            <span class="font-medium lang-en hidden">100% Free to Use</span>
+                            <span class="lang-zh">免費使用，無需信用卡</span>
+                            <span class="lang-en hidden">Free, no credit card</span>
                         </div>
-                        <div class="w-px h-6 bg-gray-300"></div>
                         <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            <span class="font-medium lang-zh">本地加密儲存</span>
-                            <span class="font-medium lang-en hidden">Local Encrypted Storage</span>
+                            <span class="lang-zh">3 天試用，隨時取消</span>
+                            <span class="lang-en hidden">3-day trial, cancel anytime</span>
                         </div>
-                        <div class="w-px h-6 bg-gray-300"></div>
                         <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            <span class="font-medium lang-zh">Google Vision AI</span>
-                            <span class="font-medium lang-en hidden">Google Vision AI</span>
+                            <span class="lang-zh">資料 100% 本地儲存</span>
+                            <span class="lang-en hidden">100% local storage</span>
                         </div>
                     </div>
                 </div>
@@ -313,6 +317,90 @@
         </div>
     </section>
 
+    <!-- Before/After Comparison Section -->
+    <section class="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <span class="lang-zh">告別紙本混亂</span>
+                    <span class="lang-en hidden">Say Goodbye to Paper Chaos</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Before -->
+                <div class="bg-white p-8 rounded-xl border-2 border-gray-200" data-aos="fade-up">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">😫</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">
+                            <span class="lang-zh">使用前</span>
+                            <span class="lang-en hidden">Before</span>
+                        </h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="lang-zh">名片堆滿抽屜，要用時找不到</span>
+                            <span class="lang-en hidden">Cards lost in drawers when needed</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="lang-zh">手動輸入聯絡資訊，費時又容易錯</span>
+                            <span class="lang-en hidden">Manual input, time-consuming and error-prone</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="lang-zh">不記得對方公司背景，交流尷尬</span>
+                            <span class="lang-en hidden">Forget company background, awkward conversations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-500 mt-1">✗</span>
+                            <span class="lang-zh">名片遺失，人脈也跟著消失</span>
+                            <span class="lang-en hidden">Lost cards mean lost connections</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- After -->
+                <div class="bg-gradient-to-br from-blue-600 to-blue-500 p-8 rounded-xl text-white shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                            <span class="text-2xl">✨</span>
+                        </div>
+                        <h3 class="text-xl font-bold">
+                            <span class="lang-zh">使用後</span>
+                            <span class="lang-en hidden">After</span>
+                        </h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 font-bold">✓</span>
+                            <span class="lang-zh"><strong>3 秒掃描</strong>，名片立即數位化，永不遺失</span>
+                            <span class="lang-en hidden"><strong>3-sec scan</strong>, instant digitization, never lose</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 font-bold">✓</span>
+                            <span class="lang-zh"><strong>AI 自動辨識</strong>，17 個欄位準確提取</span>
+                            <span class="lang-en hidden"><strong>AI auto-extract</strong>, 17 fields accurately</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 font-bold">✓</span>
+                            <span class="lang-zh"><strong>公司背景分析</strong>，交流更有深度</span>
+                            <span class="lang-en hidden"><strong>Company insights</strong>, meaningful conversations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="mt-1 font-bold">✓</span>
+                            <span class="lang-zh"><strong>本地加密保存</strong>，隨時隨地查找</span>
+                            <span class="lang-en hidden"><strong>Encrypted storage</strong>, access anytime</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="py-24 md:py-32 bg-white relative">
         <div class="container mx-auto px-4">
@@ -355,8 +443,27 @@
                     </div>
                 </div>
                 
-                <!-- Feature 2: Auto Categorization -->
+                <!-- Feature 2: AI Company Analysis -->
                 <div class="card card-feature group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                            <span class="lang-zh">AI 公司分析</span>
+                            <span class="lang-en hidden">AI Company Insights</span>
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            <span class="lang-zh">AI 即時搜尋公司背景與產業資訊，讓每次交流更有準備</span>
+                            <span class="lang-en hidden">AI-powered real-time company background and industry insights</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3: Auto Categorization -->
+                <div class="card card-feature group" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative">
                         <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
                             <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -374,26 +481,7 @@
                     </div>
                 </div>
                 
-                <!-- Feature 3: Secure Storage -->
-                <div class="card card-feature group" data-aos="fade-up" data-aos-delay="300">
-                    <div class="relative">
-                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
-                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
-                        </svg>
-                    </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
-                        <span class="lang-zh">安全加密儲存</span>
-                            <span class="lang-en hidden">Encrypted Storage</span>
-                    </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                        <span class="lang-zh"><strong>SecureStore + SHA-256</strong> 混淆加密保護，隱私優先</span>
-                        <span class="lang-en hidden"><strong>SecureStore + SHA-256</strong> encryption protection</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Feature 4: Data Export -->
+                <!-- Feature 4: CSV Export -->
                 <div class="card card-feature group" data-aos="fade-up" data-aos-delay="400">
                     <div class="relative">
                         <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-pink-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
@@ -401,13 +489,17 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
                     </div>
+                    <div class="absolute top-3 right-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        <span class="lang-zh">專業版</span>
+                        <span class="lang-en hidden">Premium</span>
+                    </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-pink-600 transition-colors">
-                        <span class="lang-zh">資料匯出</span>
-                        <span class="lang-en hidden">Data Export</span>
+                        <span class="lang-zh">CSV 資料匯出</span>
+                        <span class="lang-en hidden">CSV Export</span>
                     </h3>
                     <p class="text-gray-600 leading-relaxed">
-                        <span class="lang-zh">支援 CSV 格式匯出，輕鬆備份與轉移您的聯絡人資料</span>
-                        <span class="lang-en hidden">Export to CSV format for easy backup and data transfer</span>
+                        <span class="lang-zh">完整匯出 <strong>17 個欄位</strong>資料，Excel 完美相容，聯絡人永不遺失</span>
+                        <span class="lang-en hidden">Export all <strong>17 fields</strong> to CSV, Excel-compatible, never lose contacts</span>
                     </p>
                     </div>
                 </div>
@@ -417,25 +509,45 @@
             <div class="grid md:grid-cols-3 gap-8 mt-12">
                 <div class="flex items-start space-x-4" data-aos="fade-up">
                     <div class="flex-shrink-0">
-                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                             </svg>
                         </div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-1">
-                            <span class="lang-zh">資料加密安全</span>
-                            <span class="lang-en hidden">Data Security</span>
+                            <span class="lang-zh">本地加密儲存</span>
+                            <span class="lang-en hidden">Encrypted Storage</span>
                         </h4>
                         <p class="text-gray-600 text-sm">
-                            <span class="lang-zh">採用系統級加密技術，保護您的聯絡資料</span>
-                            <span class="lang-en hidden">System-level encryption protects your contact data</span>
+                            <span class="lang-zh">SecureStore + SHA-256 雙重加密，資料永不外洩</span>
+                            <span class="lang-en hidden">SecureStore + SHA-256 dual encryption for maximum security</span>
                         </p>
                     </div>
                 </div>
                 
                 <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex-shrink-0">
+                        <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-1">
+                            <span class="lang-zh">雙面名片支援</span>
+                            <span class="lang-en hidden">Double-Sided Cards</span>
+                        </h4>
+                        <p class="text-gray-600 text-sm">
+                            <span class="lang-zh">智能整合正反面資訊，資料更完整</span>
+                            <span class="lang-en hidden">Smart integration of both sides for complete data</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex-shrink-0">
                         <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
                             <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -445,32 +557,12 @@
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-1">
-                            <span class="lang-zh">快速掃描</span>
-                            <span class="lang-en hidden">Fast Scanning</span>
+                            <span class="lang-zh">3-8 秒極速掃描</span>
+                            <span class="lang-en hidden">3-8 Sec Scanning</span>
                         </h4>
                         <p class="text-gray-600 text-sm">
-                            <span class="lang-zh">3-8 秒完成掃描，即拍即存，效率滿分</span>
-                            <span class="lang-en hidden">3-8 seconds scanning time, instant save</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex-shrink-0">
-                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-gray-900 mb-1">
-                            <span class="lang-zh">多語言支援</span>
-                            <span class="lang-en hidden">Multi-Language</span>
-                        </h4>
-                        <p class="text-gray-600 text-sm">
-                            <span class="lang-zh">支援繁體中文、簡體中文與英文辨識</span>
-                            <span class="lang-en hidden">Supports Traditional Chinese, Simplified Chinese, and English</span>
+                            <span class="lang-zh">即拍即存，效率滿分</span>
+                            <span class="lang-en hidden">Instant save, maximum efficiency</span>
                         </p>
                     </div>
                 </div>
@@ -534,111 +626,490 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-20 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-16" data-aos="fade-up">
+    <!-- Pricing Comparison Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up">
+                <div class="inline-block mb-4">
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
+                        <span class="lang-zh">方案比較</span>
+                        <span class="lang-en hidden">Plans</span>
+                    </span>
+                </div>
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    <span class="lang-zh">選擇適合的方案</span>
+                    <span class="lang-en hidden">Choose Your Plan</span>
+                </h2>
+                <p class="text-gray-600">
+                    <span class="lang-zh">免費試用 3 天，隨時取消</span>
+                    <span class="lang-en hidden">3-day free trial, cancel anytime</span>
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                
+                <!-- 免費版 -->
+                <div class="bg-white border-2 border-gray-200 rounded-xl p-8" data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                        <span class="lang-zh">免費版</span>
+                        <span class="lang-en hidden">Free</span>
+                    </h3>
+                    <p class="text-gray-600 text-sm mb-6">
+                        <span class="lang-zh">輕度使用</span>
+                        <span class="lang-en hidden">Light usage</span>
+                    </p>
+                    
+                    <div class="text-3xl font-bold text-gray-900 mb-8">NT$ 0</div>
+                    
+                    <ul class="space-y-3 text-gray-700 text-sm mb-8">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">每月 30 次掃描</span>
+                            <span class="lang-en hidden">30 scans/month</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">每月 5 次 AI 分析</span>
+                            <span class="lang-en hidden">5 AI analyses/month</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">最多 5 個資料夾</span>
+                            <span class="lang-en hidden">Up to 5 folders</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">無 CSV 匯出功能</span>
+                            <span class="lang-en hidden">No CSV export</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">顯示廣告</span>
+                            <span class="lang-en hidden">With ads</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#download" class="block w-full text-center px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-gray-400 hover:bg-gray-50 transition">
+                        <span class="lang-zh">免費下載</span>
+                        <span class="lang-en hidden">Free Download</span>
+                    </a>
+                </div>
+                
+                <!-- 專業版 -->
+                <div class="bg-gradient-to-br from-blue-600 to-blue-500 rounded-xl p-8 text-white relative" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute -top-3 right-6 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold">
+                        <span class="lang-zh">推薦</span>
+                        <span class="lang-en hidden">Popular</span>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2">
+                        <span class="lang-zh">專業版</span>
+                        <span class="lang-en hidden">Premium</span>
+                    </h3>
+                    <p class="text-blue-100 text-sm mb-6">
+                        <span class="lang-zh">商務人士</span>
+                        <span class="lang-en hidden">For professionals</span>
+                    </p>
+                    
+                    <div class="mb-2">
+                        <span class="text-3xl font-bold">NT$ 150</span>
+                        <span class="text-blue-100">/
+                            <span class="lang-zh">月</span>
+                            <span class="lang-en hidden">month</span>
+                        </span>
+                    </div>
+                    <p class="text-blue-100 text-sm mb-8">
+                        <span class="lang-zh">年繳 NT$ 990（省 34%）</span>
+                        <span class="lang-en hidden">Annual NT$ 990 (save 34%)</span>
+                    </p>
+                    
+                    <ul class="space-y-3 text-sm mb-8">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh"><strong>每月 300 次掃描</strong>（10 倍）</span>
+                            <span class="lang-en hidden"><strong>300 scans/month</strong> (10x)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh"><strong>每月 100 次 AI 分析</strong>（20 倍）</span>
+                            <span class="lang-en hidden"><strong>100 AI analyses</strong> (20x)</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">無限資料夾</span>
+                            <span class="lang-en hidden">Unlimited folders</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">CSV 資料匯出</span>
+                            <span class="lang-en hidden">CSV export</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">完全無廣告</span>
+                            <span class="lang-en hidden">Ad-free</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                            <span class="lang-zh">優先支援</span>
+                            <span class="lang-en hidden">Priority support</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="premium.html" class="block w-full text-center px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:shadow-lg transition">
+                        <span class="lang-zh">免費試用 3 天</span>
+                        <span class="lang-en hidden">Start 3-Day Trial</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- 說明文字 -->
+            <div class="mt-8 text-center text-sm text-gray-600">
+                <p class="lang-zh">✨ 所有方案都享有：本地加密儲存、雙面名片掃描、智能 OCR 辨識、資料夾管理</p>
+                <p class="lang-en hidden">✨ All plans include: Local encrypted storage, Double-sided scanning, Smart OCR, Folder management</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-gray-900 mb-3">
                     <span class="lang-zh">常見問題</span>
                     <span class="lang-en hidden">Frequently Asked Questions</span>
                 </h2>
+                <p class="text-gray-600">
+                    <span class="lang-zh">快速找到您需要的答案</span>
+                    <span class="lang-en hidden">Find answers to your questions</span>
+                </p>
             </div>
             
-            <div class="space-y-4">
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
-                            <span class="lang-zh">這款 App 是免費的嗎？</span>
-                            <span class="lang-en hidden">Is this app free?</span>
+            <div class="space-y-3">
+                <!-- 問題 1: 免費嗎？（熱門）-->
+                <div class="faq-item faq-popular border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="flex items-center gap-3">
+                            <span class="faq-badge-popular">熱門</span>
+                            <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                                <span class="lang-zh">這款 App 是免費的嗎？</span>
+                                <span class="lang-en hidden">Is this app free?</span>
+                            </span>
                         </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">是的！基本功能完全免費使用。我們也提供專業版，包含更多進階功能如無限次掃描、進階批次操作、無廣告體驗等。</span>
-                        <span class="lang-en hidden">Yes! All basic features are completely free. We also offer a Premium version with advanced features like unlimited scans, advanced batch operations, and ad-free experience.</span>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 是的，基本功能永久免費</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ Yes, basic features are free forever</p>
+                            
+                            <ul class="space-y-2 text-sm text-gray-700 mb-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>免費版：</strong>每月 30 次掃描 + 5 次 AI 分析</span>
+                                    <span class="lang-en hidden"><strong>Free:</strong> 30 scans + 5 AI analyses/month</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>專業版：</strong>10-20 倍額度 + CSV 匯出 + 無廣告</span>
+                                    <span class="lang-en hidden"><strong>Premium:</strong> 10-20x quota + CSV export + Ad-free</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#pricing" class="text-sm text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
+                                <span class="lang-zh">查看完整方案對比 →</span>
+                                <span class="lang-en hidden">See full comparison →</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- 問題 2: 資料安全（熱門）-->
+                <div class="faq-item faq-popular border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="flex items-center gap-3">
+                            <span class="faq-badge-popular">熱門</span>
+                            <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                                <span class="lang-zh">我的資料安全嗎？</span>
+                                <span class="lang-en hidden">Is my data secure?</span>
+                            </span>
+                        </span>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 絕對安全</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ Absolutely secure</p>
+                            
+                            <ul class="space-y-2 text-sm text-gray-700 mb-4">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>本地儲存：</strong>資料不上傳雲端，完全在您的裝置上</span>
+                                    <span class="lang-en hidden"><strong>Local storage:</strong> No cloud upload, stays on your device</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>硬體級加密：</strong>使用 SecureStore 保護敏感資料</span>
+                                    <span class="lang-en hidden"><strong>Hardware encryption:</strong> SecureStore protects sensitive data</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>裝置鎖定：</strong>需要解鎖裝置才能存取</span>
+                                    <span class="lang-en hidden"><strong>Device lock:</strong> Requires unlock to access</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="privacy.html" class="text-sm text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
+                                <span class="lang-zh">了解更多隱私保護措施 →</span>
+                                <span class="lang-en hidden">Learn more about privacy →</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 問題 3: 語言支援 -->
                 <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
-                            <span class="lang-zh">支援哪些語言的名片辨識？</span>
-                            <span class="lang-en hidden">What languages are supported?</span>
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                            <span class="lang-zh">英文名片也可以掃描嗎？</span>
+                            <span class="lang-en hidden">Can it scan English cards?</span>
                         </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">我們支援繁體中文、簡體中文與英文。採用 Google Vision AI 技術，辨識準確率高達 95% 以上。</span>
-                        <span class="lang-en hidden">We support Traditional Chinese, Simplified Chinese, and English with 95%+ accuracy using Google Vision AI technology.</span>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 支援多語言辨識</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ Multi-language support</p>
+                            
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh">繁體中文、簡體中文、英文都支援</span>
+                                    <span class="lang-en hidden">Traditional Chinese, Simplified Chinese, and English</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh">採用 Google Vision AI 技術，辨識準確率 <strong>95% 以上</strong></span>
+                                    <span class="lang-en hidden">Google Vision AI technology, <strong>95%+ accuracy</strong></span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
+                <!-- 問題 4: AI 公司分析 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                            <span class="lang-zh">什麼是 AI 公司分析功能？</span>
+                            <span class="lang-en hidden">What is AI Company Analysis?</span>
+                        </span>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">🤖 AI 即時搜尋公司背景資訊</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">🤖 AI real-time company background search</p>
+                            
+                            <p class="text-sm text-gray-700 mb-3">
+                                <span class="lang-zh">點擊一鍵，AI 立即分析名片上公司的背景資訊、產業動態與最新發展，幫助您在商務交流前做好準備。</span>
+                                <span class="lang-en hidden">One tap, AI instantly analyzes company background, industry trends, and latest developments to prepare you for business interactions.</span>
+                            </p>
+                            
+                            <div class="bg-blue-50 p-3 rounded-lg text-sm mb-3">
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <p class="font-medium text-gray-900 lang-zh">免費版</p>
+                                        <p class="font-medium text-gray-900 lang-en hidden">Free</p>
+                                        <p class="text-gray-700 lang-zh">5 次/月</p>
+                                        <p class="text-gray-700 lang-en hidden">5/month</p>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-900 lang-zh">專業版</p>
+                                        <p class="font-medium text-gray-900 lang-en hidden">Premium</p>
+                                        <p class="text-gray-700 lang-zh">100 次/月</p>
+                                        <p class="text-gray-700 lang-en hidden">100/month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 問題 5: 編輯資訊 -->
                 <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
-                            <span class="lang-zh">我的資料安全嗎？</span>
-                            <span class="lang-en hidden">Is my data secure?</span>
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                            <span class="lang-zh">辨識錯誤可以修改嗎？</span>
+                            <span class="lang-en hidden">Can I fix recognition errors?</span>
                         </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">絕對安全！敏感資料使用系統級 SecureStore（硬體保護），大型資料使用 SHA-256 混淆加密。所有聯絡人資訊都安全儲存在您的裝置上，需要設備解鎖才能存取。</span>
-                        <span class="lang-en hidden">Absolutely safe! Sensitive data uses system-level SecureStore (hardware protection), large data uses SHA-256 encryption. All contacts are securely stored on your device. Device unlock required for access.</span>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-2 lang-zh">✓ 當然可以</p>
+                            <p class="text-gray-900 font-semibold mb-2 lang-en hidden">✓ Yes, absolutely</p>
+                            
+                            <p class="text-sm text-gray-700">
+                                <span class="lang-zh">AI 辨識後，您可以隨時編輯任何欄位資訊，包括姓名、職稱、公司、電話、Email 等所有 <strong>17 個欄位</strong>，確保資料完全正確。</span>
+                                <span class="lang-en hidden">After AI recognition, you can edit any of the <strong>17 fields</strong> anytime, including name, title, company, phone, email, etc.</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
-                            <span class="lang-zh">可以編輯辨識後的資訊嗎？</span>
-                            <span class="lang-en hidden">Can I edit scanned information?</span>
-                        </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">當然可以！AI 辨識後，您可以隨時編輯任何欄位資訊，包括姓名、職稱、公司、電話、電子郵件等，確保資料完全正確。</span>
-                        <span class="lang-en hidden">Yes! You can edit any field after AI recognition, including name, title, company, phone, email, and more.</span>
-                    </div>
-                </div>
-                
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
-                            <span class="lang-zh">資料儲存在哪裡？</span>
-                            <span class="lang-en hidden">Where is my data stored?</span>
-                        </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">您的資料採用本地加密儲存（SecureStore + SHA-256），完全保存在您的裝置上，確保隱私安全。資料完全由您掌控，不會上傳到任何雲端。</span>
-                        <span class="lang-en hidden">Your data uses local encrypted storage (SecureStore + SHA-256). All data stays on your device for maximum privacy. You have complete control, with no cloud uploads.</span>
-                    </div>
-                </div>
-                
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="500">
-                    <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
-                        <span class="font-semibold text-gray-900">
+                <!-- 問題 6: 匯出資料 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="250">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                             <span class="lang-zh">可以匯出聯絡人資料嗎？</span>
                             <span class="lang-en hidden">Can I export my contacts?</span>
                         </span>
-                        <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="faq-answer hidden px-6 pb-6 text-gray-600">
-                        <span class="lang-zh">目前 APP 支援 CSV 格式匯出，可將聯絡人資料備份到您的裝置或電腦。CSV 格式可在 Excel、Google Sheets 等軟體中開啟使用。</span>
-                        <span class="lang-en hidden">The app supports CSV format export, allowing you to backup your contact data to your device or computer. CSV files can be opened in Excel, Google Sheets, and other applications.</span>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">📤 專業版可匯出 CSV 格式</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">📤 Premium users can export to CSV</p>
+                            
+                            <ul class="space-y-2 text-sm text-gray-700 mb-3">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh">包含完整 <strong>17 個欄位</strong>（姓名、職位、公司、電話、Email、地址等）</span>
+                                    <span class="lang-en hidden">Includes all <strong>17 fields</strong> (name, title, company, phone, email, address, etc.)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh">CSV 檔案可在 Excel、Google Sheets 等軟體中開啟</span>
+                                    <span class="lang-en hidden">CSV files work with Excel, Google Sheets, and more</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#pricing" class="text-sm text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
+                                <span class="lang-zh">了解專業版功能 →</span>
+                                <span class="lang-en hidden">Learn about Premium →</span>
+                            </a>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- 問題 7: 取消訂閱 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
+                        <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                            <span class="lang-zh">如何取消訂閱？</span>
+                            <span class="lang-en hidden">How to cancel subscription?</span>
+                        </span>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <div>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 隨時可在裝置設定中取消</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ Cancel anytime in device settings</p>
+                            
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>iOS：</strong>設定 → Apple ID → 訂閱項目</span>
+                                    <span class="lang-en hidden"><strong>iOS:</strong> Settings → Apple ID → Subscriptions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh"><strong>Android：</strong>Google Play → 訂閱項目</span>
+                                    <span class="lang-en hidden"><strong>Android:</strong> Google Play → Subscriptions</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-blue-600 mt-0.5">•</span>
+                                    <span class="lang-zh">取消後，訂閱將在當前週期結束時停止，可繼續使用免費版</span>
+                                    <span class="lang-en hidden">After cancellation, subscription ends at current period, free version remains available</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 還有問題？聯絡區塊 -->
+            <div class="mt-12 bg-gradient-to-br from-blue-600 to-blue-500 p-8 rounded-xl text-white text-center shadow-xl" data-aos="fade-up">
+                <h3 class="text-2xl font-bold mb-3">
+                    <span class="lang-zh">還有其他問題？</span>
+                    <span class="lang-en hidden">Still Have Questions?</span>
+                </h3>
+                <p class="text-blue-100 mb-6">
+                    <span class="lang-zh">我們的團隊隨時為您解答</span>
+                    <span class="lang-en hidden">Our team is here to help</span>
+                </p>
+                <a href="mailto:aibusinesscardmanager@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:shadow-lg transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    <span class="lang-zh">發送郵件詢問</span>
+                    <span class="lang-en hidden">Send Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is It For Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 max-w-2xl mx-auto" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <span class="lang-zh">誰適合使用？</span>
+                    <span class="lang-en hidden">Who Is It For?</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="font-bold text-gray-900 mb-2 text-lg">
+                        <span class="lang-zh">業務人員</span>
+                        <span class="lang-en hidden">Sales Professionals</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        <span class="lang-zh">每天收到大量名片，需要快速建檔追蹤客戶</span>
+                        <span class="lang-en hidden">Manage daily card influx, track clients efficiently</span>
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-4">🤝</div>
+                    <h3 class="font-bold text-gray-900 mb-2 text-lg">
+                        <span class="lang-zh">企業主管</span>
+                        <span class="lang-en hidden">Business Executives</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        <span class="lang-zh">參加商務活動後，需要整理人脈並深入了解對方公司</span>
+                        <span class="lang-en hidden">Organize contacts after events, understand companies</span>
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="font-bold text-gray-900 mb-2 text-lg">
+                        <span class="lang-zh">職場新鮮人</span>
+                        <span class="lang-en hidden">Young Professionals</span>
+                    </h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        <span class="lang-zh">開始建立職場人脈，需要專業工具管理聯絡人</span>
+                        <span class="lang-en hidden">Build professional network with organized contacts</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -793,12 +1264,12 @@
                             <span class="lang-zh">功能特色</span>
                             <span class="lang-en hidden">Features</span>
                         </a></li>
-                        <li><a href="premium.html" class="hover:text-blue-400 transition">
-                            <span class="lang-zh">專業版</span>
-                            <span class="lang-en hidden">Premium</span>
+                        <li><a href="#pricing" class="hover:text-blue-400 transition">
+                            <span class="lang-zh">方案比較</span>
+                            <span class="lang-en hidden">Pricing</span>
                         </a></li>
                         <li><a href="#download" class="hover:text-blue-400 transition">
-                            <span class="lang-zh">下載</span>
+                            <span class="lang-zh">立即下載</span>
                             <span class="lang-en hidden">Download</span>
                         </a></li>
                     </ul>
@@ -862,4 +1333,5 @@
     <script src="assets/main.js"></script>
 </body>
 </html>
+
 

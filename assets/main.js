@@ -102,41 +102,58 @@ function initMobileMenu() {
 }
 
 /**
- * FAQ Accordion Functionality
+ * FAQ Accordion - 優化版
+ * 支援多個同時展開、平滑動畫、鍵盤導航
+ * 參考 Stripe、Linear、Notion 的最佳實踐
  */
 function initFAQ() {
     const faqItems = document.querySelectorAll('.faq-item');
     
-    faqItems.forEach(item => {
+    faqItems.forEach((item, index) => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         
         if (question && answer) {
+            // 設置 ARIA 屬性（無障礙支援）
+            question.setAttribute('aria-expanded', 'false');
+            question.setAttribute('aria-controls', `faq-answer-${index}`);
+            answer.setAttribute('id', `faq-answer-${index}`);
+            answer.setAttribute('role', 'region');
+            
+            // 點擊事件 - 允許多個同時展開
             question.addEventListener('click', function() {
-                // Close all other FAQ items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.querySelector('.faq-answer')?.classList.remove('active');
-                        otherItem.querySelector('.faq-question svg')?.classList.remove('rotate-180');
-                    }
-                });
+                const isExpanded = answer.classList.contains('active');
                 
-                // Toggle current item
+                // 切換當前問題狀態（不關閉其他問題）
                 answer.classList.toggle('active');
+                item.classList.toggle('expanded');
+                
+                // 更新 ARIA 屬性
+                question.setAttribute('aria-expanded', !isExpanded);
+                
+                // 旋轉箭頭
                 const svg = question.querySelector('svg');
                 if (svg) {
                     svg.classList.toggle('rotate-180');
                 }
                 
-                // Display answer
-                if (answer.classList.contains('active')) {
-                    answer.style.display = 'block';
-                } else {
-                    answer.style.display = 'none';
+                // 追蹤分析
+                if (!isExpanded) {
+                    trackEvent('FAQ', 'Expand', question.textContent.trim());
+                }
+            });
+            
+            // 鍵盤支援（Enter/Space）
+            question.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
                 }
             });
         }
     });
+    
+    console.log(`✅ FAQ initialized: ${faqItems.length} items`);
 }
 
 /**
@@ -298,20 +315,20 @@ function isMobileDevice() {
 }
 
 /**
- * Track Analytics (Placeholder for future integration)
- * TODO: Integrate Google Analytics or similar
+ * Track Analytics with Google Analytics
+ * Integrated: 2025-10-15
  */
 function trackEvent(category, action, label) {
-    // Placeholder for analytics tracking
+    // Console log for debugging
     console.log(`📊 Track Event: ${category} - ${action} - ${label}`);
     
-    // Example for Google Analytics (uncomment when ready)
-    // if (typeof gtag !== 'undefined') {
-    //     gtag('event', action, {
-    //         'event_category': category,
-    //         'event_label': label
-    //     });
-    // }
+    // Google Analytics Integration
+    if (typeof gtag !== 'undefined') {
+        gtag('event', action, {
+            'event_category': category,
+            'event_label': label
+        });
+    }
 }
 
 /**

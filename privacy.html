@@ -12,6 +12,15 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="theme-color" content="#2563EB">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FDCJCB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-54FDCJCB88');
+    </script>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -36,20 +45,20 @@
             <a href="index.html" class="text-lg font-semibold text-gray-900 hover:text-gray-700 transition">AI 名片經理</a>
             <div class="flex gap-6 text-sm">
                 <a href="index.html" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">首頁</span>
-                    <span class="lang-en hidden">Home</span>
-                </a>
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
                 <a href="privacy.html" class="font-semibold text-gray-900">
-                    <span class="lang-zh">隱私政策</span>
-                    <span class="lang-en hidden">Privacy</span>
-                </a>
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
                 <a href="terms-of-service.html" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">使用條款</span>
-                    <span class="lang-en hidden">Terms</span>
-                </a>
-                <button id="langToggle" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">EN</span>
-                    <span class="lang-en hidden">中文</span>
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
+                <button id="langToggle" class="flex items-center space-x-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition text-gray-600 hover:text-gray-900">
+                    <span class="lang-zh">繁體中文</span>
+                    <span class="lang-en hidden">English</span>
                 </button>
             </div>
         </div>
@@ -83,21 +92,21 @@
                 <p><span class="font-medium text-gray-900">開發者：</span><span class="text-gray-700">劉亦恩</span></p>
                 <p><span class="font-medium text-gray-900">聯絡信箱：</span><a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a></p>
                 <p><span class="font-medium text-gray-900">官方網站：</span><a href="https://aimingpian.com" class="text-blue-600 hover:underline">https://aimingpian.com</a></p>
-            </div>
+                    </div>
             <div class="lang-en hidden grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                 <p><span class="font-medium text-gray-900">App Name:</span><span class="text-gray-700"> AI Business Card Manager</span></p>
                 <p><span class="font-medium text-gray-900">Developer:</span><span class="text-gray-700"> Yi-En Liu (劉亦恩)</span></p>
                 <p><span class="font-medium text-gray-900">Contact Email:</span> <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline">aibusinesscardmanager@gmail.com</a></p>
                 <p><span class="font-medium text-gray-900">Website:</span> <a href="https://aimingpian.com" class="text-blue-600 hover:underline">https://aimingpian.com</a></p>
-            </div>
-        </div>
+                    </div>
+                </div>
 
-        <!-- Introduction -->
+                <!-- Introduction -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">前言：簡介與適用範圍</span>
-                <span class="lang-en hidden">Introduction and Scope</span>
-            </h2>
+                        <span class="lang-en hidden">Introduction and Scope</span>
+                    </h2>
             
             <div class="lang-zh space-y-4 text-gray-700 leading-relaxed">
                 <p>歡迎使用 <strong>AI 名片經理</strong>（以下簡稱「本應用程式」或「本服務」）。本應用程式由 <strong>劉亦恩</strong> 開發及營運。</p>
@@ -108,8 +117,8 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900 mb-2">法規遵循聲明</p>
                     <p class="text-sm">本政策遵循《中華民國個人資料保護法》、Apple App Store 審核指南（5.1.1）及 Google Play「資料安全性」政策要求制定。</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
             
             <div class="lang-en hidden space-y-4 text-gray-700 leading-relaxed">
                 <p>Welcome to <strong>AI Business Card Manager</strong> (hereinafter referred to as "the App" or "the Service"). This application is developed and operated by <strong>Yi-En Liu (劉亦恩)</strong>.</p>
@@ -120,41 +129,41 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900 mb-2">Regulatory Compliance Statement</p>
                     <p class="text-sm">This Policy complies with the Personal Data Protection Act of the Republic of China (Taiwan), Apple App Store Review Guidelines (5.1.1), and Google Play Data Safety Policy requirements.</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
-        <!-- Section 1: Data Collection -->
+                <!-- Section 1: Data Collection -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">1. 個人資料的蒐集、處理及利用方式</span>
                 <span class="lang-en hidden">1. Data Collection, Processing, and Use</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-6">
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.1 我們蒐集的個人資料類別</h3>
                     <p class="text-gray-700 mb-4 leading-relaxed">當您使用本應用程式時，我們可能蒐集以下類型的個人資料：</p>
-                    
-                    <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">帳號資訊</h4>
                             <ul class="space-y-1.5 text-gray-700">
                                 <li>• 電子郵件地址</li>
                                 <li>• 使用者名稱</li>
                                 <li>• 密碼（經加密儲存）</li>
-                            </ul>
-                        </div>
-                        
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">名片與聯絡人資料</h4>
                             <ul class="space-y-1.5 text-gray-700">
                                 <li>• 掃描的名片圖片檔案</li>
                                 <li>• OCR 辨識的文字內容（姓名、職稱、公司名稱、公司 ID、電話號碼、傳真號碼、電子郵件、通訊地址、網址、備註等）</li>
                                 <li>• 您手動新增或編輯的聯絡人資訊</li>
-                            </ul>
-                        </div>
-                        
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">裝置與技術資訊</h4>
                             <ul class="space-y-1.5 text-gray-700">
@@ -162,18 +171,18 @@
                                 <li>• 作業系統版本（iOS/Android）</li>
                                 <li>• 應用程式版本</li>
                                 <li>• IP 位址（僅用於安全性目的）</li>
-                            </ul>
-                        </div>
-                        
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">使用與分析資料</h4>
                             <ul class="space-y-1.5 text-gray-700">
-                                <li>• 功能使用頻率與行為</li>
-                                <li>• 錯誤日誌與當機報告</li>
-                                <li>• 使用時間與操作記錄</li>
-                            </ul>
-                        </div>
-                        
+                                        <li>• 功能使用頻率與行為</li>
+                                        <li>• 錯誤日誌與當機報告</li>
+                                        <li>• 使用時間與操作記錄</li>
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">訂閱與付費資訊</h4>
                             <ul class="space-y-1.5 text-gray-700">
@@ -182,25 +191,25 @@
                                 <li>• 訂閱取消與退款記錄</li>
                                 <li>• 購買收據與交易 ID</li>
                                 <li>• 訂閱方案選擇與變更記錄</li>
-                            </ul>
+                                    </ul>
                         </div>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.2 權限要求說明</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">為提供完整服務，本應用程式可能向您請求以下權限：</p>
                     <ul class="space-y-2 text-gray-700">
                         <li><strong>相機權限：</strong>用於掃描名片影像（必要）</li>
                         <li><strong>儲存權限：</strong>用於匯入/匯出名片資料（選用）</li>
-                    </ul>
+                            </ul>
                     <p class="text-sm text-gray-600 mt-3 italic">※ 您可隨時在裝置設定中管理這些權限。拒絕授予權限可能影響部分功能使用。</p>
                 </div>
-                
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.3 個人資料的利用目的</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">我們基於以下特定目的處理您的個人資料：</p>
-                    <ul class="space-y-2 text-gray-700">
+                            <ul class="space-y-2 text-gray-700">
                         <li>• 提供名片掃描、OCR 辨識與聯絡人管理服務</li>
                         <li>• 本地資料儲存與裝置內管理</li>
                         <li>• 改善 AI 辨識準確度與服務品質</li>
@@ -210,51 +219,51 @@
                         <li>• 處理訂閱付費、管理會員權益與服務</li>
                         <li>• 顯示個人化廣告以維持免費服務</li>
                         <li>• 遵守法律義務與監管要求</li>
-                    </ul>
+                            </ul>
                 </div>
-            </div>
-            
+                        </div>
+                        
             <div class="lang-en hidden space-y-6">
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.1 Categories of Personal Data We Collect</h3>
                     <p class="text-gray-700 mb-4 leading-relaxed">When you use the App, we may collect the following types of personal data:</p>
-                    
-                    <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">Account Information</h4>
                             <ul class="space-y-1.5 text-gray-700">
-                                <li>• Email address</li>
-                                <li>• Username</li>
-                                <li>• Password (encrypted)</li>
-                            </ul>
-                        </div>
-                        
+                                        <li>• Email address</li>
+                                        <li>• Username</li>
+                                        <li>• Password (encrypted)</li>
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">Business Card & Contact Data</h4>
                             <ul class="space-y-1.5 text-gray-700">
-                                <li>• Scanned business card images</li>
-                                <li>• OCR-extracted text (name, title, company, company ID, phone, fax, email, address, website, notes, etc.)</li>
-                                <li>• Manually added or edited contact information</li>
-                            </ul>
-                        </div>
-                        
+                                        <li>• Scanned business card images</li>
+                                        <li>• OCR-extracted text (name, title, company, company ID, phone, fax, email, address, website, notes, etc.)</li>
+                                        <li>• Manually added or edited contact information</li>
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">Device & Technical Information</h4>
                             <ul class="space-y-1.5 text-gray-700">
-                                <li>• Device model and identifier</li>
-                                <li>• Operating system version (iOS/Android)</li>
-                                <li>• App version</li>
-                                <li>• IP address (security purposes only)</li>
-                            </ul>
-                        </div>
-                        
+                                        <li>• Device model and identifier</li>
+                                        <li>• Operating system version (iOS/Android)</li>
+                                        <li>• App version</li>
+                                        <li>• IP address (security purposes only)</li>
+                                    </ul>
+                                </div>
+                                
                         <div class="border border-gray-200 p-5">
                             <h4 class="font-semibold text-gray-900 mb-3">Usage & Analytics Data</h4>
                             <ul class="space-y-1.5 text-gray-700">
-                                <li>• Feature usage frequency and behavior</li>
-                                <li>• Error logs and crash reports</li>
-                                <li>• Usage timestamps and operation history</li>
-                            </ul>
+                                        <li>• Feature usage frequency and behavior</li>
+                                        <li>• Error logs and crash reports</li>
+                                        <li>• Usage timestamps and operation history</li>
+                                    </ul>
                         </div>
                         
                         <div class="border border-gray-200 p-5">
@@ -267,23 +276,23 @@
                                 <li>• Subscription plan changes</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.2 Permission Requests</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">To provide full functionality, the App may request the following permissions:</p>
                     <ul class="space-y-2 text-gray-700">
                         <li><strong>Camera:</strong> Required for scanning business cards</li>
                         <li><strong>Storage:</strong> Optional, for importing/exporting card data</li>
-                    </ul>
+                            </ul>
                     <p class="text-sm text-gray-600 mt-3 italic">※ You may manage these permissions in device settings anytime. Denying permissions may affect certain features.</p>
                 </div>
-                
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">1.3 Purpose of Data Use</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">We process your personal data for the following specific purposes:</p>
-                    <ul class="space-y-2 text-gray-700">
+                            <ul class="space-y-2 text-gray-700">
                         <li>• Provide business card scanning, OCR recognition, and contact management services</li>
                         <li>• Local data storage and on-device management</li>
                         <li>• Improve AI recognition accuracy and service quality</li>
@@ -293,189 +302,189 @@
                         <li>• Process subscriptions, manage membership rights</li>
                         <li>• Display personalized ads to maintain free service</li>
                         <li>• Comply with legal obligations and regulatory requirements</li>
-                    </ul>
-                </div>
-            </div>
+                            </ul>
+                        </div>
+                    </div>
         </section>
 
-        <!-- Section 2: Legal Basis -->
+                <!-- Section 2: Legal Basis -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">2. 法律依據</span>
                 <span class="lang-en hidden">2. Legal Basis</span>
-            </h2>
-            
-            <div class="lang-zh space-y-4">
+                    </h2>
+                    
+                        <div class="lang-zh space-y-4">
                 <p class="text-gray-700 leading-relaxed">依據《中華民國個人資料保護法》第 19 條及第 20 條規定，我們處理您的個人資料係基於以下法律依據：</p>
                 
                 <div class="space-y-3">
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">① 當事人同意（Your Consent）</p>
                         <p class="text-gray-700 text-sm">當您註冊帳號、使用服務或授予相關權限時，即表示您同意我們依本政策處理您的個人資料。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">② 契約之履行（Contract Performance）</p>
                         <p class="text-gray-700 text-sm">為提供本服務（名片掃描、OCR 辨識、本地管理等功能），處理您的個人資料為履行服務契約所必要。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">③ 法律義務（Legal Obligation）</p>
                         <p class="text-gray-700 text-sm">為遵守相關法律規定、法院命令、主管機關要求或維護公共利益。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">④ 正當利益（Legitimate Interest）</p>
                         <p class="text-gray-700 text-sm">基於改善服務品質、系統安全維護、防範詐欺等正當利益，且不損害您的權益。</p>
-                    </div>
+                                    </div>
                 </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900">撤回同意權</p>
                     <p class="text-sm text-gray-700 mt-2">您有權隨時撤回您的同意。惟撤回同意可能影響您使用本服務的部分或全部功能。</p>
-                </div>
-            </div>
-            
-            <div class="lang-en hidden space-y-4">
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
                 <p class="text-gray-700 leading-relaxed">In accordance with Articles 19 and 20 of the Personal Data Protection Act of the Republic of China, we process your personal data based on the following legal grounds:</p>
                 
                 <div class="space-y-3">
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">① Your Consent</p>
                         <p class="text-gray-700 text-sm">When you register an account, use the Service, or grant permissions, you consent to our processing of your personal data per this Policy.</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">② Contract Performance</p>
                         <p class="text-gray-700 text-sm">Processing your data is necessary to perform the Service (card scanning, OCR, local management, etc.) as agreed in our service contract.</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">③ Legal Obligation</p>
                         <p class="text-gray-700 text-sm">To comply with applicable laws, court orders, regulatory requirements, or to serve public interest.</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-5">
                         <p class="font-semibold text-gray-900 mb-2">④ Legitimate Interest</p>
                         <p class="text-gray-700 text-sm">For improving service quality, system security, fraud prevention, and other legitimate interests that do not harm your rights.</p>
-                    </div>
-                </div>
+                                    </div>
+                            </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900">Right to Withdraw Consent</p>
                     <p class="text-sm text-gray-700 mt-2">You may withdraw your consent at any time. However, withdrawal may affect your ability to use some or all features of the Service.</p>
-                </div>
-            </div>
+                        </div>
+                    </div>
         </section>
 
-        <!-- Section 3: Data Protection -->
+                <!-- Section 3: Data Protection -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">3. 資料之保護</span>
                 <span class="lang-en hidden">3. Data Protection</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-6">
                 <p class="text-gray-700 leading-relaxed">我們高度重視您的個人資料安全，採用業界標準及最佳實務的技術與組織措施，保護您的資料免於未經授權存取、竄改、洩露或毀損。</p>
                 
-                <div>
+                                    <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">技術性安全措施</h3>
                     <ul class="space-y-3 text-gray-700">
                         <li>
-                            <strong>系統級加密：</strong>
+                                        <strong>系統級加密：</strong>
                             <p class="text-sm mt-1">敏感資料使用 SecureStore（硬體級保護）、大型資料使用 SHA-256 雜湊混淆技術</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>安全傳輸：</strong>
+                                        <strong>安全傳輸：</strong>
                             <p class="text-sm mt-1">所有資料傳輸採用 HTTPS/TLS 1.2+ 加密協定</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>密碼保護：</strong>
+                                        <strong>密碼保護：</strong>
                             <p class="text-sm mt-1">使用者密碼經過單向雜湊處理，我們無法查看原始密碼</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>防火牆與入侵偵測：</strong>
+                                        <strong>防火牆與入侵偵測：</strong>
                             <p class="text-sm mt-1">建置多層防護機制，監控異常存取行為</p>
-                        </li>
-                    </ul>
+                                </li>
+                            </ul>
                 </div>
-                
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">組織性安全措施</h3>
-                    <ul class="space-y-2 text-gray-700">
+                            <ul class="space-y-2 text-gray-700">
                         <li>• 存取權限控管：採最小權限原則，僅授權人員可存取必要資料</li>
                         <li>• 定期安全稽核：進行安全檢測與漏洞掃描</li>
                         <li>• 資料匯出：您可隨時匯出聯絡人資料為 CSV 格式進行備份</li>
                         <li>• 員工訓練：對處理個人資料的人員進行保密與安全教育</li>
-                    </ul>
+                            </ul>
                 </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-medium text-gray-900 mb-2">重要提醒</p>
                     <p class="text-sm text-gray-700">雖然我們已盡力保護您的資料安全，但無法保證絕對安全。請妥善保管您的帳號密碼，切勿與他人共享。若發現帳號異常，請立即聯絡我們。</p>
-                </div>
-            </div>
-            
+                            </div>
+                        </div>
+                        
             <div class="lang-en hidden space-y-6">
                 <p class="text-gray-700 leading-relaxed">We take the security of your personal data very seriously and implement industry-standard and best-practice technical and organizational measures to protect your data from unauthorized access, alteration, disclosure, or destruction.</p>
                 
-                <div>
+                                    <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Technical Security Measures</h3>
                     <ul class="space-y-3 text-gray-700">
                         <li>
-                            <strong>System-Level Encryption:</strong>
+                                        <strong>System-Level Encryption:</strong>
                             <p class="text-sm mt-1">Sensitive data uses SecureStore (hardware-level protection), large data uses SHA-256 obfuscation</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>Secure Transmission:</strong>
+                                        <strong>Secure Transmission:</strong>
                             <p class="text-sm mt-1">All data transfers use HTTPS/TLS 1.2+ encrypted protocols</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>Password Protection:</strong>
+                                        <strong>Password Protection:</strong>
                             <p class="text-sm mt-1">User passwords are hashed with one-way encryption; we cannot view original passwords</p>
-                        </li>
+                                </li>
                         <li>
-                            <strong>Firewall & Intrusion Detection:</strong>
+                                        <strong>Firewall & Intrusion Detection:</strong>
                             <p class="text-sm mt-1">Multi-layered defense mechanisms monitor abnormal access behavior</p>
-                        </li>
-                    </ul>
+                                </li>
+                            </ul>
                 </div>
-                
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">Organizational Security Measures</h3>
-                    <ul class="space-y-2 text-gray-700">
+                            <ul class="space-y-2 text-gray-700">
                         <li>• Access Control: Principle of least privilege; only authorized personnel can access necessary data</li>
                         <li>• Security Audits: Regular security testing and vulnerability scanning</li>
                         <li>• Data Export: You can export your contact data to CSV format for backup at any time</li>
                         <li>• Staff Training: Confidentiality and security training for personnel handling personal data</li>
-                    </ul>
+                            </ul>
                 </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-medium text-gray-900 mb-2">Important Notice</p>
                     <p class="text-sm text-gray-700">While we strive to protect your data, absolute security cannot be guaranteed. Please keep your account credentials safe and never share them with others. If you notice any account anomalies, contact us immediately.</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
-        <!-- Section 4: External Links -->
+                <!-- Section 4: External Links -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">4. 網站對外的相關連結</span>
                 <span class="lang-en hidden">4. External Links</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-4 text-gray-700 leading-relaxed">
                 <p>本應用程式或其相關網站可能包含通往第三方網站或服務的連結（例如 App Store、Google Play、Supabase、Google Cloud 等）。</p>
                 <p>這些第三方網站或服務擁有其各自的隱私權政策，<strong>不受本政策約束</strong>。當您點擊這些連結或使用這些服務時，您的個人資料將受該第三方的隱私權政策保護。</p>
                 <p>我們建議您在使用任何第三方服務前，詳細閱讀其隱私權政策。我們對第三方的隱私權做法或內容不負任何責任。</p>
-            </div>
-            
+                        </div>
+                        
             <div class="lang-en hidden space-y-4 text-gray-700 leading-relaxed">
                 <p>The App or its related websites may contain links to third-party websites or services (e.g., App Store, Google Play, Supabase, Google Cloud, etc.).</p>
                 <p>These third-party sites or services have their own privacy policies and <strong>are not covered by this Policy</strong>. When you click these links or use these services, your personal data will be protected by the third party's privacy policy.</p>
                 <p>We recommend you carefully read the privacy policies of any third-party services before use. We are not responsible for the privacy practices or content of third parties.</p>
-            </div>
+                        </div>
         </section>
 
         <!-- Section 5: Third-Party Services -->
@@ -483,19 +492,19 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">5. 與第三人共用個人資料之政策</span>
                 <span class="lang-en hidden">5. Third-Party Services and Data Sharing</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-6">
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-bold text-gray-900 text-lg mb-2">我們絕不出售您的個人資料</p>
                     <p class="text-sm text-gray-700">We DO NOT sell your personal data to any third party for any purpose.</p>
-                </div>
-                
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">5.1 整合的第三方服務</h3>
                     <p class="text-gray-700 mb-4 leading-relaxed">為提供完整服務，我們使用以下可信賴的第三方服務供應商：</p>
-                    
-                    <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Google Vision API</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>OCR 名片文字辨識服務（核心功能）</p>
@@ -503,47 +512,47 @@
                             <p class="text-sm text-gray-700 mb-1"><strong>資料處理：</strong>圖片上傳至 Google Cloud 進行文字辨識，處理完成後立即刪除</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>資料保留：</strong>Google 不會儲存您的名片圖片</p>
                             <a href="https://cloud.google.com/terms/cloud-privacy-notice" class="text-sm text-blue-600 hover:underline">Google Cloud 隱私權政策 →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Supabase Edge Functions</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>API 代理服務（不儲存資料）</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>傳輸資料：</strong>OCR 請求、AI 解析請求</p>
                             <a href="https://supabase.com/privacy" class="text-sm text-blue-600 hover:underline">隱私權政策 →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Expo / React Native</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>應用程式開發框架</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>傳輸資料：</strong>錯誤日誌、當機報告（選用）</p>
                             <a href="https://expo.dev/privacy" class="text-sm text-blue-600 hover:underline">隱私權政策 →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">RevenueCat</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>訂閱管理與付費處理服務</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>傳輸資料：</strong>訂閱狀態、付費記錄、設備識別碼、購買收據</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>資料處理：</strong>管理訂閱生命週期、處理退款、恢復購買</p>
                             <a href="https://www.revenuecat.com/privacy" class="text-sm text-blue-600 hover:underline">RevenueCat 隱私權政策 →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Google AdMob</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>顯示個人化廣告以維持免費服務</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>傳輸資料：</strong>廣告識別碼、使用行為、設備資訊、廣告互動</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>控制方式：</strong>可透過 App Tracking Transparency 控制</p>
                             <a href="https://policies.google.com/privacy" class="text-sm text-blue-600 hover:underline">Google AdMob 隱私權政策 →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Google Gemini AI</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>智能名片資料解析（透過 Supabase Edge Function 代理）</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>傳輸資料：</strong>OCR 辨識的文字內容</p>
                             <a href="https://policies.google.com/privacy" class="text-sm text-blue-600 hover:underline">隱私權政策 →</a>
                         </div>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">5.2 資料分享情況</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">我們僅在以下嚴格限制的情況下分享您的個人資料：</p>
@@ -552,52 +561,52 @@
                         <li><strong>② 法律義務：</strong>遵守法律規定、法院命令、政府主管機關要求或維護公共利益時</li>
                         <li><strong>③ 取得同意：</strong>在取得您明確同意的情況下</li>
                         <li><strong>④ 保護權益：</strong>為防範詐欺、保護我們或他人的合法權益、財產或安全時</li>
-                    </ul>
+                            </ul>
                     <p class="text-sm text-gray-600 italic mt-4">※ 所有第三方服務供應商均需遵守嚴格的保密協議及資料保護義務。</p>
                 </div>
-            </div>
-            
+                        </div>
+                        
             <div class="lang-en hidden space-y-6">
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-bold text-gray-900 text-lg mb-2">We DO NOT Sell Your Personal Data</p>
                     <p class="text-sm text-gray-700">We NEVER sell your personal data to any third party for any purpose.</p>
-                </div>
-                
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">5.1 Integrated Third-Party Services</h3>
                     <p class="text-gray-700 mb-4 leading-relaxed">To provide full functionality, we use the following trusted third-party service providers:</p>
-                    
-                    <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Google Vision AI</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>Purpose:</strong> OCR business card recognition</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>Data Shared:</strong> Business card images</p>
                             <a href="https://cloud.google.com/terms/cloud-privacy-notice" class="text-sm text-blue-600 hover:underline">Privacy Policy →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Supabase Edge Functions</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>Purpose:</strong> API proxy service (no data storage)</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>Data Shared:</strong> OCR requests, AI parsing requests</p>
                             <a href="https://supabase.com/privacy" class="text-sm text-blue-600 hover:underline">Privacy Policy →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">RevenueCat</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>Purpose:</strong> Subscription management and payment processing</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>Data Shared:</strong> Subscription status, payment records, device ID, purchase receipts</p>
                             <a href="https://www.revenuecat.com/privacy" class="text-sm text-blue-600 hover:underline">Privacy Policy →</a>
-                        </div>
-                        
+                                </div>
+                                
                         <div class="border border-gray-200 p-4">
                             <p class="font-semibold text-gray-900 mb-2">Google AdMob</p>
                             <p class="text-sm text-gray-700 mb-1"><strong>Purpose:</strong> Display personalized ads to support free service</p>
                             <p class="text-sm text-gray-700 mb-2"><strong>Data Shared:</strong> Advertising ID, usage behavior, device info, ad interactions</p>
                             <a href="https://policies.google.com/privacy" class="text-sm text-blue-600 hover:underline">Privacy Policy →</a>
                         </div>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div>
                     <h3 class="text-lg font-semibold text-gray-900 mb-4">5.2 Data Sharing Circumstances</h3>
                     <p class="text-gray-700 mb-3 leading-relaxed">We only share your personal data under the following strictly limited circumstances:</p>
@@ -606,19 +615,19 @@
                         <li><strong>② Legal Obligation:</strong> To comply with legal requirements, court orders, government authority requests, or public interest</li>
                         <li><strong>③ With Consent:</strong> When we have obtained your explicit consent</li>
                         <li><strong>④ Rights Protection:</strong> To prevent fraud and protect our or others' legitimate rights, property, or safety</li>
-                    </ul>
+                            </ul>
                     <p class="text-sm text-gray-600 italic mt-4">※ All third-party service providers are required to comply with strict confidentiality agreements and data protection obligations.</p>
-                </div>
-            </div>
+                        </div>
+                    </div>
         </section>
 
-        <!-- Section 6: Cookies -->
+                <!-- Section 6: Cookies -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">6. Cookie 之使用</span>
                 <span class="lang-en hidden">6. Cookies and Analytics</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-4 text-gray-700 leading-relaxed">
                 <p>作為原生行動應用程式，本 App <strong>不使用傳統網頁 Cookie</strong>。然而，我們可能使用類似的追蹤技術（如 SDK、分析工具）來改善使用體驗及服務品質。</p>
                 
@@ -629,15 +638,27 @@
                         <li>• <strong>使用分析：</strong>收集匿名或彙總的使用資料，以分析功能使用頻率、改善 App 效能</li>
                         <li>• <strong>當機報告：</strong>自動收集技術性錯誤資訊，協助排除問題（不含個人可識別資訊）</li>
                         <li>• <strong>安全性監控：</strong>偵測異常登入行為，保護帳號安全</li>
-                    </ul>
+                            </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">網站分析工具</h3>
+                    <div class="border border-gray-200 p-5">
+                        <p class="font-semibold text-gray-900 mb-2">Google Analytics</p>
+                        <p class="text-sm text-gray-700 mb-1"><strong>用途：</strong>網站流量分析、使用者行為追蹤</p>
+                        <p class="text-sm text-gray-700 mb-1"><strong>收集資料：</strong>頁面瀏覽次數、訪問來源、裝置類型、地理位置（城市層級）、瀏覽時間</p>
+                        <p class="text-sm text-gray-700 mb-2"><strong>資料用途：</strong>了解使用者需求、優化網站內容與功能</p>
+                        <a href="https://policies.google.com/privacy" class="text-sm text-blue-600 hover:underline">Google Analytics 隱私權政策 →</a>
+                    </div>
+                    <p class="text-sm text-gray-600 italic mt-3">※ 您可以透過瀏覽器設定或安裝 Google Analytics Opt-out 擴充功能來停用追蹤。</p>
                 </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">管理方式</p>
                     <p class="text-sm">您可在裝置設定中管理廣告追蹤偏好（iOS：「設定 > 隱私權 > 追蹤」；Android：「設定 > Google > 廣告」）。</p>
-                </div>
-            </div>
-            
+                            </div>
+                        </div>
+                        
             <div class="lang-en hidden space-y-4 text-gray-700 leading-relaxed">
                 <p>As a native mobile application, this App <strong>does not use traditional web cookies</strong>. However, we may use similar tracking technologies (such as SDKs, analytics tools) to improve user experience and service quality.</p>
                 
@@ -648,24 +669,36 @@
                         <li>• <strong>Usage Analytics:</strong> Collect anonymous or aggregated usage data to analyze feature usage and improve app performance</li>
                         <li>• <strong>Crash Reports:</strong> Automatically collect technical error information to help resolve issues (no personally identifiable information)</li>
                         <li>• <strong>Security Monitoring:</strong> Detect abnormal login behavior to protect account security</li>
-                    </ul>
+                            </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Website Analytics Tools</h3>
+                    <div class="border border-gray-200 p-5">
+                        <p class="font-semibold text-gray-900 mb-2">Google Analytics</p>
+                        <p class="text-sm text-gray-700 mb-1"><strong>Purpose:</strong> Website traffic analysis, user behavior tracking</p>
+                        <p class="text-sm text-gray-700 mb-1"><strong>Data Collected:</strong> Page views, traffic sources, device types, geographic location (city-level), browsing time</p>
+                        <p class="text-sm text-gray-700 mb-2"><strong>Data Use:</strong> Understand user needs, optimize website content and features</p>
+                        <a href="https://policies.google.com/privacy" class="text-sm text-blue-600 hover:underline">Google Analytics Privacy Policy →</a>
+                    </div>
+                    <p class="text-sm text-gray-600 italic mt-3">※ You can opt out of tracking via browser settings or by installing the Google Analytics Opt-out extension.</p>
                 </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">Management</p>
                     <p class="text-sm">You can manage ad tracking preferences in device settings (iOS: "Settings > Privacy > Tracking"; Android: "Settings > Google > Ads").</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
-        <!-- Section 7: Data Retention -->
+                <!-- Section 7: Data Retention -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">7. 資料保留期限</span>
                 <span class="lang-en hidden">7. Data Retention</span>
-            </h2>
-            
-            <div class="lang-zh space-y-4">
+                    </h2>
+                    
+                        <div class="lang-zh space-y-4">
                 <p class="text-gray-700 leading-relaxed">我們僅在達成蒐集目的所需期間內保留您的個人資料，或依法律規定應保存之期間。</p>
                 
                 <div class="space-y-3">
@@ -677,13 +710,13 @@
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">使用記錄與日誌</p>
                         <p class="text-sm text-gray-700">保留 <strong>180 天</strong>，用於安全性監控與服務改善，到期後自動刪除。</p>
-                    </div>
+                            </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">訂閱與付費記錄</p>
                         <p class="text-sm text-gray-700">保留 <strong>7 年</strong>，用於會計與稅務目的，符合法律要求。</p>
-                    </div>
-                    
+                        </div>
+                        
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">廣告互動記錄</p>
                         <p class="text-sm text-gray-700">保留 <strong>90 天</strong>，用於廣告效果分析與優化。</p>
@@ -692,45 +725,45 @@
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">法律義務保留</p>
                         <p class="text-sm text-gray-700">若因法律、會計或監管要求需保留特定資料，我們將依規定保留至法定期間屆滿。</p>
-                    </div>
-                </div>
+                            </div>
+                        </div>
                 
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">主動刪除</p>
                     <p class="text-sm text-gray-700">您可隨時在 APP 內刪除聯絡人或清除所有資料。資料完全儲存在您的裝置上，您擁有完全控制權。</p>
+                    </div>
                 </div>
-            </div>
-            
+
             <div class="lang-en hidden space-y-4">
                 <p class="text-gray-700 leading-relaxed">We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, or as required by law.</p>
-                
-                <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Business Card Data</p>
                         <p class="text-sm text-gray-700">All data is stored on your device. When you delete the APP or clear data, it will be immediately removed from your device.</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Usage Logs</p>
                         <p class="text-sm text-gray-700">Retained for <strong>180 days</strong> for security monitoring and service improvement, then automatically deleted.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Subscription & Payment Records</p>
                         <p class="text-sm text-gray-700">Retained for <strong>7 years</strong> for accounting and tax purposes, in compliance with legal requirements.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Legal Retention</p>
                         <p class="text-sm text-gray-700">If legal, accounting, or regulatory requirements mandate retention of specific data, we will retain it until the statutory period expires.</p>
-                    </div>
-                </div>
-                
+                                    </div>
+                                </div>
+                                
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">Active Deletion</p>
                     <p class="text-sm text-gray-700">You can delete contacts or clear all data in the APP at any time. Data is stored entirely on your device, giving you complete control.</p>
-                </div>
-            </div>
+                                    </div>
+                                </div>
         </section>
 
         <!-- Section 8: User Rights -->
@@ -747,27 +780,27 @@
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">查詢或請求閱覽（Access Right）</p>
                         <p class="text-sm text-gray-700">您有權查詢或請求閱覽我們持有的您的個人資料。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">請求製給複製本（Copy Right）</p>
                         <p class="text-sm text-gray-700">您可要求我們提供您個人資料的複本。</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">請求補充或更正（Rectification Right）</p>
                         <p class="text-sm text-gray-700">若您的個人資料不正確或不完整，您可要求更正或補充。大部分資料可直接在 App 內編輯。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">請求停止蒐集、處理或利用（Objection Right）</p>
                         <p class="text-sm text-gray-700">在特定情況下，您可要求停止蒐集、處理或利用您的個人資料。</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">請求刪除（Deletion Right）</p>
                         <p class="text-sm text-gray-700">您可隨時要求刪除您的個人資料。可在 App 內「設定 > 帳號管理 > 刪除帳號」或聯絡我們。</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">資料可攜權（Data Portability）</p>
@@ -777,71 +810,71 @@
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">訂閱管理權（Subscription Management）</p>
                         <p class="text-sm text-gray-700">您可隨時在 App Store 或 Google Play 中管理、取消或恢復訂閱。我們不會處理退款，退款需透過平台處理。</p>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900 mb-2">如何行使您的權利？</p>
                     <p class="text-sm text-gray-700 mb-2">請透過電子郵件 <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-medium">aibusinesscardmanager@gmail.com</a> 與我們聯絡，並附上您的身分證明文件以確認身分。我們將於收到請求後 <strong>30 天內</strong>回覆。</p>
                     <p class="text-xs text-gray-600 italic">※ 特定情況下（如涉及法律義務、合法權益等），我們可能無法完全滿足您的請求，但會說明原因。</p>
-                </div>
-            </div>
-            
-            <div class="lang-en hidden space-y-4">
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
                 <p class="text-gray-700 leading-relaxed">In accordance with Article 3 of the Personal Data Protection Act, you have the following rights regarding your personal data:</p>
-                
-                <div class="space-y-3">
+                            
+                            <div class="space-y-3">
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Access Right</p>
                         <p class="text-sm text-gray-700">You have the right to inquire or request access to the personal data we hold about you.</p>
-                    </div>
+                                    </div>
                     
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Copy Right</p>
                         <p class="text-sm text-gray-700">You may request a copy of your personal data.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Rectification Right</p>
                         <p class="text-sm text-gray-700">If your personal data is inaccurate or incomplete, you may request correction or supplementation. Most data can be edited directly in the App.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Objection Right</p>
                         <p class="text-sm text-gray-700">Under certain circumstances, you may request to stop the collection, processing, or use of your personal data.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Deletion Right</p>
                         <p class="text-sm text-gray-700">You may request deletion of your personal data at any time via "Settings > Account Management > Delete Account" or by contacting us.</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Data Portability</p>
                         <p class="text-sm text-gray-700">You may request to export your data in a structured, commonly used, and machine-readable format (CSV).</p>
-                    </div>
-                    
+                                </div>
+                                
                     <div class="border border-gray-200 p-4">
                         <p class="font-semibold text-gray-900 mb-2">Subscription Management</p>
                         <p class="text-sm text-gray-700">You can manage, cancel, or restore subscriptions in App Store or Google Play. Refunds are processed through the platform.</p>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-6">
                     <p class="font-medium text-gray-900 mb-2">How to Exercise Your Rights?</p>
                     <p class="text-sm text-gray-700 mb-2">Please contact us via email at <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-medium">aibusinesscardmanager@gmail.com</a> and include proof of identity for verification. We will respond within <strong>30 days</strong> of receiving your request.</p>
                     <p class="text-xs text-gray-600 italic">※ Under certain circumstances (e.g., legal obligations, legitimate interests), we may not be able to fully fulfill your request, but we will explain the reasons.</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
-        <!-- Section 9: Policy Changes -->
+                <!-- Section 9: Policy Changes -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">9. 隱私權保護政策之修正</span>
                 <span class="lang-en hidden">9. Changes to this Policy</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-4 text-gray-700 leading-relaxed">
                 <p>為因應法規變更、服務功能調整或業務需要，我們可能不時修訂本隱私權政策。</p>
                 
@@ -850,7 +883,7 @@
                     <ul class="space-y-2">
                         <li>• <strong>一般變更：</strong>我們將於本應用程式及官方網站（<a href="https://aimingpian.com/privacy" class="text-blue-600 hover:underline">aimingpian.com/privacy</a>）公告最新版本政策。</li>
                         <li>• <strong>重大變更：</strong>若涉及實質性權利義務調整（如新增資料蒐集項目、改變資料使用目的等），我們將透過 App 推播通知或電子郵件，提前 <strong>30 天</strong>告知您。</li>
-                    </ul>
+                            </ul>
                 </div>
                 
                 <p>若您不同意修訂後的政策，請立即停止使用本服務並刪除您的帳號。繼續使用本服務即表示您接受並同意受修訂後政策之約束。</p>
@@ -858,9 +891,9 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">生效日期</p>
                     <p class="text-sm">本政策如有修正，將於公告後立即生效（重大變更則於 30 天後生效）。</p>
-                </div>
-            </div>
-            
+                            </div>
+                        </div>
+                        
             <div class="lang-en hidden space-y-4 text-gray-700 leading-relaxed">
                 <p>To comply with regulatory changes, service adjustments, or business needs, we may revise this Privacy Policy from time to time.</p>
                 
@@ -869,7 +902,7 @@
                     <ul class="space-y-2">
                         <li>• <strong>General Changes:</strong> We will announce the latest policy on the App and official website (<a href="https://aimingpian.com/privacy" class="text-blue-600 hover:underline">aimingpian.com/privacy</a>).</li>
                         <li>• <strong>Material Changes:</strong> For substantive changes affecting rights and obligations (e.g., new data collection, changes in data use purposes), we will notify you via app push notification or email <strong>30 days</strong> in advance.</li>
-                    </ul>
+                            </ul>
                 </div>
                 
                 <p>If you do not agree with the revised policy, please immediately stop using the Service and delete your account. Continued use of the Service constitutes your acceptance of and agreement to be bound by the revised policy.</p>
@@ -877,17 +910,17 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">Effective Date</p>
                     <p class="text-sm">If this policy is amended, it will take effect immediately upon announcement (material changes will take effect after 30 days).</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
-        <!-- Section 10: Governing Law -->
+                <!-- Section 10: Governing Law -->
         <section class="mb-12">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">10. 爭議解決與管轄法院</span>
                 <span class="lang-en hidden">10. Governing Law and Jurisdiction</span>
-            </h2>
-            
+                    </h2>
+                    
             <div class="lang-zh space-y-4 text-gray-700 leading-relaxed">
                 <p>本隱私權政策之解釋與適用，以及與本政策相關之爭議，均應依據<strong>中華民國法律</strong>（不含其法律衝突原則）為準據法。</p>
                 <p>若您與我們之間因本政策產生任何爭議或訴訟，雙方同意以<strong>臺灣臺北地方法院</strong>為第一審管轄法院。但若法律有專屬管轄之規定者，從其規定。</p>
@@ -895,9 +928,9 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">適用法規</p>
                     <p class="text-sm">《中華民國個人資料保護法》、《民法》、《消費者保護法》及其他相關法令。</p>
-                </div>
-            </div>
-            
+                            </div>
+                        </div>
+                        
             <div class="lang-en hidden space-y-4 text-gray-700 leading-relaxed">
                 <p>The interpretation and application of this Privacy Policy, as well as any disputes related to this Policy, shall be governed by the <strong>laws of the Republic of China (Taiwan)</strong> (excluding its conflict of law principles).</p>
                 <p>Any disputes or litigation arising from this Policy between you and us shall be submitted to the <strong>Taipei District Court</strong> as the court of first instance. However, if the law provides for exclusive jurisdiction, such provisions shall apply.</p>
@@ -905,8 +938,8 @@
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5 mt-4">
                     <p class="font-medium text-gray-900 mb-2">Applicable Laws</p>
                     <p class="text-sm">Personal Data Protection Act of the Republic of China, Civil Code, Consumer Protection Act, and other relevant laws.</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
         <!-- Section 11: Contact -->
@@ -914,79 +947,79 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6 pb-3 border-b border-gray-200">
                 <span class="lang-zh">11. 聯絡方式</span>
                 <span class="lang-en hidden">11. Contact Information</span>
-            </h2>
-            
-            <div class="lang-zh space-y-4">
+                    </h2>
+                    
+                        <div class="lang-zh space-y-4">
                 <p class="text-gray-700 leading-relaxed">如果您對本隱私權政策有任何疑問、建議或需要行使您的個人資料權利，歡迎透過以下方式聯絡我們：</p>
-                
+                            
                 <div class="border border-gray-200 p-6 space-y-4">
-                    <div>
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">應用程式名稱</p>
-                        <p class="text-gray-700">AI 名片經理</p>
-                    </div>
-                    
-                    <div>
+                                        <p class="text-gray-700">AI 名片經理</p>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">開發者</p>
-                        <p class="text-gray-700">劉亦恩</p>
-                    </div>
-                    
-                    <div>
+                                        <p class="text-gray-700">劉亦恩</p>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">電子郵件</p>
                         <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-medium">aibusinesscardmanager@gmail.com</a>
-                    </div>
-                    
-                    <div>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">官方網站</p>
                         <a href="https://aimingpian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium">https://aimingpian.com</a>
-                    </div>
-                    
-                    <div>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">回覆時間</p>
                         <p class="text-sm text-gray-700">我們將於收到您的訊息後 <strong>3 個工作天內</strong>回覆（法定權利請求將於 30 天內回覆）</p>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-medium text-gray-900 mb-2">提示</p>
                     <p class="text-sm text-gray-700">為加速處理您的請求，請在信件中註明您的姓名、註冊信箱及具體需求內容。</p>
-                </div>
-            </div>
-            
-            <div class="lang-en hidden space-y-4">
+                            </div>
+                        </div>
+                        
+                        <div class="lang-en hidden space-y-4">
                 <p class="text-gray-700 leading-relaxed">If you have any questions, suggestions, or need to exercise your personal data rights regarding this Privacy Policy, please contact us:</p>
-                
+                            
                 <div class="border border-gray-200 p-6 space-y-4">
-                    <div>
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">Application Name</p>
-                        <p class="text-gray-700">AI Business Card Manager (AI 名片經理)</p>
-                    </div>
-                    
-                    <div>
+                                        <p class="text-gray-700">AI Business Card Manager (AI 名片經理)</p>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">Developer</p>
-                        <p class="text-gray-700">Yi-En Liu (劉亦恩)</p>
-                    </div>
-                    
-                    <div>
+                                        <p class="text-gray-700">Yi-En Liu (劉亦恩)</p>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">Email</p>
                         <a href="mailto:aibusinesscardmanager@gmail.com" class="text-blue-600 hover:underline font-medium">aibusinesscardmanager@gmail.com</a>
-                    </div>
-                    
-                    <div>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">Official Website</p>
                         <a href="https://aimingpian.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium">https://aimingpian.com</a>
-                    </div>
-                    
-                    <div>
+                                </div>
+                                
+                                    <div>
                         <p class="font-semibold text-gray-900 mb-1">Response Time</p>
                         <p class="text-sm text-gray-700">We will respond within <strong>3 business days</strong> of receiving your message (legal rights requests within 30 days)</p>
-                    </div>
-                </div>
-                
+                                </div>
+                            </div>
+                            
                 <div class="bg-blue-50 border-l-4 border-blue-600 p-5">
                     <p class="font-medium text-gray-900 mb-2">Tip</p>
                     <p class="text-sm text-gray-700">To expedite your request, please include your name, registered email, and specific requirements in your message.</p>
-                </div>
-            </div>
+                            </div>
+                        </div>
         </section>
 
         <!-- Closing -->
@@ -994,10 +1027,10 @@
             <p class="text-gray-700 mb-4 lang-zh">感謝您信任並使用 <strong>AI 名片經理</strong>。我們承諾持續保護您的隱私與個人資料安全。</p>
             <p class="text-gray-700 mb-4 lang-en hidden">Thank you for trusting and using <strong>AI Business Card Manager</strong>. We are committed to protecting your privacy and personal data security.</p>
             <p class="text-sm text-gray-500">
-                <span class="lang-zh">最後更新：2025 年 1 月 1 日</span>
-                <span class="lang-en hidden">Last Updated: January 1, 2025</span>
-            </p>
-        </div>
+                                <span class="lang-zh">最後更新：2025 年 1 月 1 日</span>
+                                <span class="lang-en hidden">Last Updated: January 1, 2025</span>
+                            </p>
+                        </div>
 
     </main>
 
@@ -1005,22 +1038,22 @@
     <footer class="border-t border-gray-200 bg-gray-50 py-8 mt-16">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <p class="text-sm text-gray-600 mb-4">
-                <span class="lang-zh">© 2025 AI 名片經理. 版權所有.</span>
-                <span class="lang-en hidden">© 2025 AI Business Card Manager. All rights reserved.</span>
-            </p>
+                    <span class="lang-zh">© 2025 AI 名片經理. 版權所有.</span>
+                    <span class="lang-en hidden">© 2025 AI Business Card Manager. All rights reserved.</span>
+                </p>
             <div class="flex justify-center gap-6 text-sm">
                 <a href="index.html" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">首頁</span>
-                    <span class="lang-en hidden">Home</span>
-                </a>
+                        <span class="lang-zh">首頁</span>
+                        <span class="lang-en hidden">Home</span>
+                    </a>
                 <a href="privacy.html" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">隱私政策</span>
-                    <span class="lang-en hidden">Privacy</span>
-                </a>
+                        <span class="lang-zh">隱私政策</span>
+                        <span class="lang-en hidden">Privacy</span>
+                    </a>
                 <a href="terms-of-service.html" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">使用條款</span>
-                    <span class="lang-en hidden">Terms</span>
-                </a>
+                        <span class="lang-zh">使用條款</span>
+                        <span class="lang-en hidden">Terms</span>
+                    </a>
             </div>
         </div>
     </footer>

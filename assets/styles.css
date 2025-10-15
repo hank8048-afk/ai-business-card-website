@@ -565,23 +565,134 @@ h6 {
     font-size: var(--text-xl);
 }
 
-/* FAQ Accordion */
+/* ==========================================================================
+   FAQ Accordion - 優化版
+   參考 Stripe、Linear、Notion 的最佳實踐
+   ========================================================================== */
+
+/* FAQ 容器 */
 .faq-item {
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
 }
 
-.faq-item.active .faq-question svg {
+/* Hover 效果強化 */
+.faq-item:hover {
+    border-color: #bfdbfe !important; /* blue-200 */
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+}
+
+/* 展開狀態視覺標記 */
+.faq-item.expanded {
+    border-color: #3b82f6 !important; /* blue-500 */
+    background-color: #eff6ff; /* blue-50 */
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.12);
+}
+
+/* 問題按鈕 */
+.faq-question {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-question:hover {
+    background-color: #f0f9ff; /* blue-50/50 */
+}
+
+.faq-item.expanded .faq-question {
+    color: #1e40af; /* blue-800 */
+    background-color: transparent;
+}
+
+/* 箭頭動畫優化 */
+.faq-question svg {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #9ca3af; /* gray-400 */
+}
+
+.faq-question:hover svg {
+    color: #2563eb; /* blue-600 */
+    transform: scale(1.1);
+}
+
+.faq-question svg.rotate-180 {
     transform: rotate(180deg);
+    color: #2563eb; /* blue-600 */
 }
 
+.faq-question:hover svg.rotate-180 {
+    transform: rotate(180deg) scale(1.1);
+}
+
+/* 答案區域 - 平滑展開動畫 */
 .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.3s ease,
+                padding 0.3s ease;
+    opacity: 0;
 }
 
 .faq-answer.active {
-    max-height: 500px;
+    max-height: 800px; /* 足夠大的值 */
+    opacity: 1;
+}
+
+/* 答案內容淡入效果 */
+.faq-answer.active > div {
+    animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 熱門問題特殊樣式 */
+.faq-item.faq-popular {
+    border-width: 2px;
+    border-color: #bfdbfe; /* blue-200 */
+    background: linear-gradient(to bottom, #ffffff, #f0f9ff);
+}
+
+.faq-item.faq-popular:hover {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+
+/* 熱門標籤 */
+.faq-badge-popular {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    letter-spacing: 0.025em;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
+}
+
+/* 響應式優化 */
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 1rem !important;
+        font-size: 0.9375rem;
+    }
+    
+    .faq-answer {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .faq-answer.active {
+        max-height: 1000px; /* 手機上可能需要更大 */
+    }
 }
 
 /* Hero Section Background */

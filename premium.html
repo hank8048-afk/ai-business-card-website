@@ -12,6 +12,15 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="theme-color" content="#2563EB">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FDCJCB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-54FDCJCB88');
+    </script>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -90,9 +99,9 @@
                 <span class="lang-zh">解鎖全部功能，打造專業級人脈管理體驗</span>
                 <span class="lang-en hidden">Unlock all features for professional networking management</span>
             </p>
-            <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg" data-aos="fade-up" data-aos-delay="200">
-                <span class="lang-zh">目前完全免費使用！專業版功能規劃中</span>
-                <span class="lang-en hidden">Currently 100% Free! Premium features in planning</span>
+            <div class="inline-block bg-gradient-to-r from-green-400 to-emerald-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <span class="lang-zh">✨ 專業版現已上線！3 天免費試用</span>
+                <span class="lang-en hidden">✨ Premium Now Available! 3-Day Free Trial</span>
             </div>
         </div>
         
@@ -191,12 +200,16 @@
                             <span class="lang-en hidden">Pro</span>
                         </h3>
                         <div class="text-4xl font-bold mb-2">
-                            <span class="lang-zh">NT$99</span>
-                            <span class="lang-en hidden">$3.99</span>
+                            <span class="lang-zh">NT$ 150</span>
+                            <span class="lang-en hidden">$4.99</span>
                         </div>
                         <p class="text-blue-100">
                             <span class="lang-zh">每月</span>
                             <span class="lang-en hidden">per month</span>
+                        </p>
+                        <p class="text-sm text-blue-100 mt-2">
+                            <span class="lang-zh">年繳 NT$ 990（省 34%）</span>
+                            <span class="lang-en hidden">Annual NT$ 990 (save 34%)</span>
                         </p>
                     </div>
                     
@@ -224,8 +237,8 @@
                                 <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                             </svg>
                             <span>
-                                <span class="lang-zh">進階匯出格式<strong>（CSV + vCard）</strong></span>
-                                <span class="lang-en hidden">Advanced Export <strong>(CSV + vCard)</strong></span>
+                                <span class="lang-zh"><strong>CSV 資料匯出</strong>（17 個欄位完整匯出）</span>
+                                <span class="lang-en hidden"><strong>CSV Data Export</strong> (All 17 fields)</span>
                             </span>
                         </li>
                         <li class="flex items-start">
@@ -257,10 +270,10 @@
                         </li>
                     </ul>
                     
-                    <button class="w-full py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition">
-                        <span class="lang-zh">即將推出</span>
-                        <span class="lang-en hidden">Coming Soon</span>
-                    </button>
+                    <a href="#download" class="block w-full py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition text-center">
+                        <span class="lang-zh">開始 3 天免費試用</span>
+                        <span class="lang-en hidden">Start 3-Day Free Trial</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -297,16 +310,30 @@
                     <tbody class="divide-y divide-gray-200">
                         <tr class="hover:bg-gray-50 transition">
                             <td class="px-6 py-4 font-semibold text-gray-900">
-                                <span class="lang-zh">OCR 辨識</span>
-                                <span class="lang-en hidden">OCR Recognition</span>
+                                <span class="lang-zh">每月掃描次數</span>
+                                <span class="lang-en hidden">Monthly Scans</span>
                             </td>
                             <td class="px-6 py-4 text-center">
-                                <span class="lang-zh">基礎</span>
-                                <span class="lang-en hidden">Basic</span>
+                                <span class="lang-zh">30 次</span>
+                                <span class="lang-en hidden">30 scans</span>
                             </td>
                             <td class="px-6 py-4 text-center bg-blue-50">
-                                <span class="lang-zh">進階（95%+）</span>
-                                <span class="lang-en hidden">Advanced (95%+)</span>
+                                <span class="lang-zh"><strong>300 次</strong></span>
+                                <span class="lang-en hidden"><strong>300 scans</strong></span>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold text-gray-900">
+                                <span class="lang-zh">AI 公司分析</span>
+                                <span class="lang-en hidden">AI Company Analysis</span>
+                            </td>
+                            <td class="px-6 py-4 text-center">
+                                <span class="lang-zh">5 次/月</span>
+                                <span class="lang-en hidden">5/month</span>
+                            </td>
+                            <td class="px-6 py-4 text-center bg-blue-50">
+                                <span class="lang-zh"><strong>100 次/月</strong></span>
+                                <span class="lang-en hidden"><strong>100/month</strong></span>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition">
@@ -325,14 +352,16 @@
                         </tr>
                         <tr class="hover:bg-gray-50 transition">
                             <td class="px-6 py-4 font-semibold text-gray-900">
-                                <span class="lang-zh">資料匯出</span>
-                                <span class="lang-en hidden">Data Export</span>
+                                <span class="lang-zh">CSV 資料匯出</span>
+                                <span class="lang-en hidden">CSV Export</span>
                             </td>
                             <td class="px-6 py-4 text-center">
-                                <span class="text-gray-500">CSV</span>
+                                <span class="text-gray-400">✗</span>
                             </td>
                             <td class="px-6 py-4 text-center bg-blue-50">
-                                <span class="text-green-600 font-semibold">CSV</span>
+                                <svg class="w-5 h-5 text-green-500 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
                             </td>
                         </tr>
                         <tr class="hover:bg-gray-50 transition">
@@ -391,8 +420,8 @@
                     <span class="lang-en hidden">Ready to Upgrade Your Network Management?</span>
                 </h2>
                 <p class="text-xl text-blue-100 mb-8">
-                    <span class="lang-zh">專業版即將推出，立即註冊搶先體驗！</span>
-                    <span class="lang-en hidden">Premium coming soon. Register now for early access!</span>
+                    <span class="lang-zh">立即升級專業版，享受 3 天免費試用！</span>
+                    <span class="lang-en hidden">Upgrade to Premium now with 3-day free trial!</span>
                 </p>
                 
                 <!-- Payment Integration Placeholder -->

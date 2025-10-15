@@ -12,6 +12,15 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="theme-color" content="#2563EB">
     
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FDCJCB88"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-54FDCJCB88');
+    </script>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -47,10 +56,10 @@
                         <span class="lang-zh">使用條款</span>
                         <span class="lang-en hidden">Terms</span>
                     </a>
-                <button id="langToggle" class="text-gray-600 hover:text-gray-900 transition">
-                    <span class="lang-zh">EN</span>
-                    <span class="lang-en hidden">中文</span>
-                    </button>
+                <button id="langToggle" class="flex items-center space-x-2 px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition text-gray-600 hover:text-gray-900">
+                    <span class="lang-zh">繁體中文</span>
+                    <span class="lang-en hidden">English</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -271,13 +280,14 @@
                                 </div>
                                 
                         <div class="border border-gray-200 p-5">
-                            <p class="font-semibold text-gray-900 mb-3">訂閱方案</p>
+                            <p class="font-semibold text-gray-900 mb-3">專業版訂閱方案</p>
                             <ul class="text-sm text-gray-700 space-y-1">
-                                        <li>• 無限次掃描</li>
-                                        <li>• 進階匯出格式（CSV + vCard）</li>
-                                        <li>• 進階批次操作</li>
-                                        <li>• 無廣告體驗</li>
-                                        <li>• 優先客戶支援</li>
+                                        <li>• 每月 300 次掃描（10 倍額度）</li>
+                                        <li>• 每月 100 次 AI 分析（20 倍額度）</li>
+                                        <li>• CSV 資料匯出功能</li>
+                                        <li>• 無限資料夾管理</li>
+                                        <li>• 完全無廣告體驗</li>
+                                        <li>• 優先技術支援</li>
                                     </ul>
                         </div>
                                 </div>
@@ -343,13 +353,14 @@
                                 </div>
                                 
                         <div class="border border-gray-200 p-5">
-                            <p class="font-semibold text-gray-900 mb-3">Subscription Plan</p>
+                            <p class="font-semibold text-gray-900 mb-3">Premium Subscription Plan</p>
                             <ul class="text-sm text-gray-700 space-y-1">
-                                        <li>• Unlimited scans</li>
-                                <li>• Advanced export formats (CSV + vCard)</li>
-                                <li>• Advanced batch operations</li>
-                                        <li>• Ad-free experience</li>
-                                        <li>• Priority support</li>
+                                        <li>• 300 scans per month (10x quota)</li>
+                                        <li>• 100 AI analyses per month (20x quota)</li>
+                                        <li>• CSV data export feature</li>
+                                        <li>• Unlimited folder management</li>
+                                        <li>• Completely ad-free experience</li>
+                                        <li>• Priority technical support</li>
                                     </ul>
                                 </div>
                             </div>
