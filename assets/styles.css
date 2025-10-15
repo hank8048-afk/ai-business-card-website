@@ -900,12 +900,19 @@ img {
     top: 0;
 }
 
-/* Focus Styles */
-a:focus,
-button:focus,
-input:focus {
+/* Focus Styles - Only show on keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
+}
+
+/* Remove default focus outline on mouse click */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible) {
+    outline: none;
 }
 
 /* Utility Classes */
