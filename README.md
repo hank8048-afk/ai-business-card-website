@@ -6,8 +6,8 @@ A professional, bilingual (中文/English) landing website for the AI Business C
 ---
 
 ## 🌐 Live Website
-- **Domain**: https://aimingpian.com (placeholder)
-- **Deployment Platform**: Zeabur (recommended)
+- **Domain**: https://aibusinesscardmanager.com (placeholder)
+- **Deployment Platform**: 
 
 ---
 
