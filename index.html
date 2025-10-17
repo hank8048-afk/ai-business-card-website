@@ -5,15 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO Meta Tags -->
-    <meta name="title" content="AI 名片經理｜智慧掃描名片 App" />
-    <meta name="description" content="AI 名片經理是一款能智慧掃描名片、自動分類聯絡人、安全加密儲存的數位人脈管理工具。"/>
-    <meta property="og:title" content="AI 名片經理" />
-    <meta property="og:description" content="智慧掃描名片，打造你的數位人脈庫。" />
-    <meta property="og:image" content="https://aimingpian.com/assets/preview.png" />
+    <meta name="title" content="AI 名片經理 - 3秒智能掃描名片，AI辨識17個欄位，專業人脈管理工具" />
+    <meta name="description" content="AI 名片經理是專業的名片掃描App，3秒智能辨識17個欄位，AI分析公司背景，支援中英文名片，免費試用專業版功能，專業人脈管理工具。"/>
+    <meta name="keywords" content="名片掃描,AI辨識,人脈管理,商務工具,名片管理App,數位名片,聯絡人管理,AI名片分析">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="AI 名片經理">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AI 名片經理">
+    <meta property="og:title" content="AI 名片經理 - 智能名片掃描工具" />
+    <meta property="og:description" content="3秒智能掃描名片，AI辨識17個欄位，專業人脈管理，支援中英文名片掃描" />
+    <meta property="og:image" content="https://aimingpian.com/assets/images/app-mockup.png" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://aimingpian.com" />
+    <meta property="og:locale" content="zh_TW">
+    
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI 名片經理 - 智能名片掃描工具">
+    <meta name="twitter:description" content="3秒智能掃描名片，AI辨識17個欄位，專業人脈管理">
+    <meta name="twitter:image" content="https://aimingpian.com/assets/images/app-mockup.png">
     
     <title>AI 名片經理 | AI Business Card Manager</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AI 名片經理",
+      "description": "AI 名片經理是一款能智慧掃描名片、自動分類聯絡人、安全加密儲存的數位人脈管理工具",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "BusinessApplication",
+      "offers": [
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "TWD",
+          "description": "免費版功能"
+        },
+        {
+          "@type": "Offer",
+          "price": "150",
+          "priceCurrency": "TWD",
+          "description": "專業版月費"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "100"
+      },
+      "url": "https://aimingpian.com",
+      "screenshot": "https://aimingpian.com/assets/images/app-mockup.png"
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
@@ -21,6 +69,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon.png">
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <meta name="theme-color" content="#2563EB">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="assets/styles.css" as="style">
+    <link rel="preload" href="assets/images/app-mockup.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-54FDCJCB88"></script>
@@ -50,11 +105,7 @@
             <div class="flex justify-between items-center">
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
-                        </svg>
-                    </div>
+                    <img src="assets/images/icon.png" alt="AI 名片經理" class="w-10 h-10 rounded-xl">
                     <span class="text-xl font-bold text-gray-900">
                         <span class="lang-zh">AI 名片經理</span>
                         <span class="lang-en hidden">AI Business Card Manager</span>
@@ -125,6 +176,21 @@
         </div>
     </nav>
 
+    <!-- Breadcrumb Navigation -->
+    <nav aria-label="Breadcrumb" class="container mx-auto px-4 pt-4">
+        <ol class="flex items-center space-x-2 text-sm text-gray-600">
+            <li><a href="/" class="hover:text-blue-600 transition">
+                <span class="lang-zh">首頁</span>
+                <span class="lang-en hidden">Home</span>
+            </a></li>
+            <li>/</li>
+            <li><span class="text-gray-900">
+                <span class="lang-zh">AI 名片經理</span>
+                <span class="lang-en hidden">AI Business Card Manager</span>
+            </span></li>
+        </ol>
+    </nav>
+
     <!-- Hero Section -->
     <section class="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
         <!-- Background Decoration -->
@@ -139,12 +205,22 @@
             <div class="flex justify-center mb-8" data-aos="fade-down">
                 <div class="inline-flex items-center gap-3 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-md border border-blue-100">
                     <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
                         <span class="text-sm font-semibold text-gray-700">
-                            <span class="lang-zh">隱私優先</span>
-                            <span class="lang-en hidden">Privacy First</span>
+                            <span class="lang-zh">AI 智能分析</span>
+                            <span class="lang-en hidden">AI Smart Analysis</span>
+                        </span>
+                    </div>
+                    <div class="w-px h-5 bg-gray-300"></div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        <span class="text-sm font-semibold text-gray-700">
+                            <span class="lang-zh">3秒極速掃描</span>
+                            <span class="lang-en hidden">3-Second Scan</span>
                         </span>
                     </div>
                     <div class="w-px h-5 bg-gray-300"></div>
@@ -153,18 +229,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.818-4.954A9.955 9.955 0 0112 1C6.477 1 2 5.477 2 11c0 1.6.376 3.112 1.043 4.453"/>
                         </svg>
                         <span class="text-sm font-semibold text-gray-700">
-                            <span class="lang-zh">本地儲存</span>
-                            <span class="lang-en hidden">Local Storage</span>
-                        </span>
-                    </div>
-                    <div class="w-px h-5 bg-gray-300"></div>
-                    <div class="flex items-center gap-2">
-                        <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                        <span class="text-sm font-semibold text-gray-700">
-                            <span class="lang-zh">Google AI 技術</span>
-                            <span class="lang-en hidden">Google AI Powered</span>
+                            <span class="lang-zh">95% 辨識準確</span>
+                            <span class="lang-en hidden">95% Accuracy</span>
                         </span>
                     </div>
                 </div>
@@ -209,17 +275,17 @@
                         </div>
                         <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full border border-blue-200">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+                                <path fill-rule="evenodd" d="M9 12l2 2 4-4m5.818-4.954A9.955 9.955 0 0112 1C6.477 1 2 5.477 2 11c0 1.6.376 3.112 1.043 4.453" clip-rule="evenodd"/>
                             </svg>
-                            <span class="text-sm font-semibold lang-zh">本地加密儲存</span>
-                            <span class="text-sm font-semibold lang-en hidden">Local Encrypted</span>
+                            <span class="text-sm font-semibold lang-zh">17個完整欄位</span>
+                            <span class="text-sm font-semibold lang-en hidden">17 Complete Fields</span>
                         </div>
                     </div>
                     
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 mb-6">
                         <!-- 主 CTA - 超級突出 -->
-                        <a href="#download" class="group inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl hover:bg-blue-700 transition-all">
+                        <a href="#download" class="group inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white text-lg font-bold rounded-xl shadow-lg hover:shadow-2xl hover:bg-blue-700 transition-all" aria-label="免費下載AI名片管理App">
                             <span class="lang-zh">免費下載 App</span>
                             <span class="lang-en hidden">Download Free</span>
                             <svg class="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -228,7 +294,7 @@
                         </a>
                         
                         <!-- 次要 CTA - 低調 -->
-                        <a href="#pricing" class="inline-flex items-center justify-center px-6 py-4 text-gray-700 text-base hover:text-gray-900 transition">
+                        <a href="#pricing" class="inline-flex items-center justify-center px-6 py-4 text-gray-700 text-base hover:text-gray-900 transition" aria-label="查看付費方案">
                             <span class="lang-zh">查看方案 →</span>
                             <span class="lang-en hidden">See Plans →</span>
                         </a>
@@ -240,22 +306,15 @@
                             <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            <span class="lang-zh">免費使用，無需信用卡</span>
-                            <span class="lang-en hidden">Free, no credit card</span>
+                            <span class="lang-zh">專業版 3 天試用，隨時取消</span>
+                            <span class="lang-en hidden">Premium 3-day trial, cancel anytime</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                             </svg>
-                            <span class="lang-zh">3 天試用，隨時取消</span>
-                            <span class="lang-en hidden">3-day trial, cancel anytime</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-                            </svg>
-                            <span class="lang-zh">資料 100% 本地儲存</span>
-                            <span class="lang-en hidden">100% local storage</span>
+                            <span class="lang-zh">17個欄位完整提取</span>
+                            <span class="lang-en hidden">17 fields complete extraction</span>
                         </div>
                     </div>
                 </div>
@@ -264,9 +323,15 @@
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" class="relative">
                     <div class="relative z-10 animate-float">
                         <!-- Phone Mockup -->
-                        <div class="relative mx-auto max-w-sm lg:max-w-md">
+                        <div class="relative mx-auto max-w-xs lg:max-w-sm">
                             <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-[3rem] blur-2xl opacity-30"></div>
-                            <img src="assets/images/app-mockup.png" alt="AI Business Card Manager App" class="relative w-full drop-shadow-2xl rounded-[2.5rem]" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22800%22%3E%3Crect fill=%22%233b82f6%22 width=%22400%22 height=%22800%22 rx=%2240%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EApp Mockup%3C/text%3E%3C/svg%3E'">
+                            <!-- 背景覆蓋層，隱藏白色區域 -->
+                            <div class="absolute inset-2 bg-gradient-to-br from-blue-50 via-white to-indigo-50 rounded-[2rem] z-10"></div>
+                            <img src="assets/images/app-mockup.png" 
+                                 alt="AI 名片經理 App 介面展示 - 智能掃描名片功能" 
+                                 class="relative w-full drop-shadow-2xl rounded-[2.5rem] z-20" 
+                                 style="mix-blend-mode: multiply;"
+                                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22800%22%3E%3Crect fill=%22%233b82f6%22 width=%22400%22 height=%22800%22 rx=%2240%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22white%22 text-anchor=%22middle%22 dy=%22.3em%22%3EApp Mockup%3C/text%3E%3C/svg%3E'">
                         </div>
                     </div>
                     
@@ -329,16 +394,15 @@
             
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Before -->
-                <div class="bg-white p-8 rounded-xl border-2 border-gray-200" data-aos="fade-up">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-                            <span class="text-2xl">😫</span>
+                <div class="relative bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-xl border-2 border-red-200 overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-4 right-4 w-24 h-24 opacity-90 overflow-hidden rounded-lg">
+                        <img src="assets/images/before-person.png" alt="名片管理使用前混亂狀態 - 抽屜堆滿名片" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900">
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">
                             <span class="lang-zh">使用前</span>
                             <span class="lang-en hidden">Before</span>
                         </h3>
-                    </div>
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start gap-3">
                             <span class="text-red-500 mt-1">✗</span>
@@ -361,19 +425,19 @@
                             <span class="lang-en hidden">Lost cards mean lost connections</span>
                         </li>
                     </ul>
+                    </div>
                 </div>
                 
                 <!-- After -->
-                <div class="bg-gradient-to-br from-blue-600 to-blue-500 p-8 rounded-xl text-white shadow-xl" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                            <span class="text-2xl">✨</span>
+                <div class="relative bg-gradient-to-br from-blue-600 to-blue-500 p-8 rounded-xl text-white shadow-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-4 right-4 w-24 h-24 opacity-90 overflow-hidden rounded-lg">
+                        <img src="assets/images/after-person.png" alt="名片管理使用後整齊狀態 - 智能數位化管理" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="text-xl font-bold">
+                    <div class="relative z-10">
+                        <h3 class="text-xl font-bold mb-6">
                             <span class="lang-zh">使用後</span>
                             <span class="lang-en hidden">After</span>
                         </h3>
-                    </div>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3">
                             <span class="mt-1 font-bold">✓</span>
@@ -392,10 +456,11 @@
                         </li>
                         <li class="flex items-start gap-3">
                             <span class="mt-1 font-bold">✓</span>
-                            <span class="lang-zh"><strong>本地加密保存</strong>，隨時隨地查找</span>
-                            <span class="lang-en hidden"><strong>Encrypted storage</strong>, access anytime</span>
+                            <span class="lang-zh"><strong>智能資料管理</strong>，隨時隨地查找</span>
+                            <span class="lang-en hidden"><strong>Smart data management</strong>, access anytime</span>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -424,8 +489,27 @@
             
             <!-- Features Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                <!-- Feature 1: Smart OCR -->
+                <!-- Feature 1: AI Company Analysis -->
                 <div class="card card-feature group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
+                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-purple-600 transition-colors">
+                            <span class="lang-zh">AI 智能分析</span>
+                            <span class="lang-en hidden">AI Smart Analysis</span>
+                    </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            <span class="lang-zh">一鍵獲取公司背景、產業趨勢、最新動態，讓每次商務交流都有深度準備</span>
+                            <span class="lang-en hidden">One-tap access to company background, industry trends, and latest developments for meaningful business conversations</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2: Smart OCR -->
+                <div class="card card-feature group" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative">
                         <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
                             <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -437,28 +521,9 @@
                             <span class="lang-en hidden">Smart OCR</span>
                     </h3>
                         <p class="text-gray-600 leading-relaxed">
-                            <span class="lang-zh">採用 <strong>Google Vision AI</strong>，準確辨識中英文名片，自動提取聯絡資訊</span>
-                            <span class="lang-en hidden">Powered by <strong>Google Vision AI</strong> for accurate text recognition</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Feature 2: AI Company Analysis -->
-                <div class="card card-feature group" data-aos="fade-up" data-aos-delay="200">
-                    <div class="relative">
-                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow">
-                            <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
-                            <span class="lang-zh">AI 公司分析</span>
-                            <span class="lang-en hidden">AI Company Insights</span>
-                        </h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            <span class="lang-zh">AI 即時搜尋公司背景與產業資訊，讓每次交流更有準備</span>
-                            <span class="lang-en hidden">AI-powered real-time company background and industry insights</span>
-                        </p>
+                            <span class="lang-zh">採用 <strong>AI OCR 辨識</strong>，準確辨識中英文名片，自動提取聯絡資訊</span>
+                            <span class="lang-en hidden">Powered by <strong>AI OCR technology</strong> for accurate text recognition</span>
+                    </p>
                     </div>
                 </div>
                 
@@ -477,7 +542,7 @@
                         <p class="text-gray-600 leading-relaxed">
                         <span class="lang-zh">智能分類聯絡人，支援自訂資料夾，輕鬆管理人脈</span>
                             <span class="lang-en hidden">Smart contact organization with custom folders</span>
-                    </p>
+                        </p>
                     </div>
                 </div>
                 
@@ -511,18 +576,18 @@
                     <div class="flex-shrink-0">
                         <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                             <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                             </svg>
                         </div>
                     </div>
                     <div>
                         <h4 class="font-bold text-gray-900 mb-1">
-                            <span class="lang-zh">本地加密儲存</span>
-                            <span class="lang-en hidden">Encrypted Storage</span>
+                            <span class="lang-zh">AI 深度分析</span>
+                            <span class="lang-en hidden">AI Deep Analysis</span>
                         </h4>
                         <p class="text-gray-600 text-sm">
-                            <span class="lang-zh">SecureStore + SHA-256 雙重加密，資料永不外洩</span>
-                            <span class="lang-en hidden">SecureStore + SHA-256 dual encryption for maximum security</span>
+                            <span class="lang-zh">智能分析公司背景、產業動態，提供深度商務洞察</span>
+                            <span class="lang-en hidden">Smart analysis of company background and industry trends for deep business insights</span>
                         </p>
                     </div>
                 </div>
@@ -586,8 +651,8 @@
                         <span class="text-3xl font-bold text-white">1</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">📸 拍攝名片</span>
-                        <span class="lang-en hidden">📸 Scan Card</span>
+                        <span class="lang-zh">拍攝名片</span>
+                        <span class="lang-en hidden">Scan Card</span>
                     </h3>
                     <p class="text-gray-600">
                         <span class="lang-zh">開啟相機對準名片，輕觸拍攝按鈕</span>
@@ -600,8 +665,8 @@
                         <span class="text-3xl font-bold text-white">2</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">🤖 AI 辨識</span>
-                        <span class="lang-en hidden">🤖 AI Processing</span>
+                        <span class="lang-zh">AI 辨識</span>
+                        <span class="lang-en hidden">AI Processing</span>
                     </h3>
                     <p class="text-gray-600">
                         <span class="lang-zh">AI 自動辨識並整理聯絡資訊</span>
@@ -614,8 +679,8 @@
                         <span class="text-3xl font-bold text-white">3</span>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">💾 儲存管理</span>
-                        <span class="lang-en hidden">💾 Save & Manage</span>
+                        <span class="lang-zh">儲存管理</span>
+                        <span class="lang-en hidden">Save & Manage</span>
                     </h3>
                     <p class="text-gray-600">
                         <span class="lang-zh">檢視並儲存至您的數位人脈庫</span>
@@ -765,8 +830,8 @@
             
             <!-- 說明文字 -->
             <div class="mt-8 text-center text-sm text-gray-600">
-                <p class="lang-zh">✨ 所有方案都享有：本地加密儲存、雙面名片掃描、智能 OCR 辨識、資料夾管理</p>
-                <p class="lang-en hidden">✨ All plans include: Local encrypted storage, Double-sided scanning, Smart OCR, Folder management</p>
+                <p class="lang-zh">✨ 所有方案都享有：AI 智能分析、雙面名片掃描、智能 OCR 辨識、資料夾管理</p>
+                <p class="lang-en hidden">✨ All plans include: AI Smart Analysis, Double-sided scanning, Smart OCR, Folder management</p>
             </div>
         </div>
     </section>
@@ -792,9 +857,9 @@
                         <span class="flex items-center gap-3">
                             <span class="faq-badge-popular">熱門</span>
                             <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                <span class="lang-zh">這款 App 是免費的嗎？</span>
-                                <span class="lang-en hidden">Is this app free?</span>
-                            </span>
+                            <span class="lang-zh">這款 App 是免費的嗎？</span>
+                            <span class="lang-en hidden">Is this app free?</span>
+                        </span>
                         </span>
                         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -826,15 +891,15 @@
                     </div>
                 </div>
                 
-                <!-- 問題 2: 資料安全（熱門）-->
+                <!-- 問題 2: AI分析功能（熱門）-->
                 <div class="faq-item faq-popular border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="50">
                     <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
                         <span class="flex items-center gap-3">
                             <span class="faq-badge-popular">熱門</span>
                             <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                                <span class="lang-zh">我的資料安全嗎？</span>
-                                <span class="lang-en hidden">Is my data secure?</span>
-                            </span>
+                                <span class="lang-zh">AI 分析功能如何使用？</span>
+                                <span class="lang-en hidden">How does AI analysis work?</span>
+                        </span>
                         </span>
                         <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -842,30 +907,30 @@
                     </button>
                     <div class="faq-answer px-6 pb-6">
                         <div>
-                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 絕對安全</p>
-                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ Absolutely secure</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">✓ 一鍵智能分析</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">✓ One-tap smart analysis</p>
                             
                             <ul class="space-y-2 text-sm text-gray-700 mb-4">
                                 <li class="flex items-start gap-2">
                                     <span class="text-blue-600 mt-0.5">•</span>
-                                    <span class="lang-zh"><strong>本地儲存：</strong>資料不上傳雲端，完全在您的裝置上</span>
-                                    <span class="lang-en hidden"><strong>Local storage:</strong> No cloud upload, stays on your device</span>
+                                    <span class="lang-zh"><strong>一鍵分析：</strong>掃描名片後，點擊「AI分析」按鈕即可</span>
+                                    <span class="lang-en hidden"><strong>One-tap analysis:</strong> After scanning, tap the "AI Analysis" button</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-blue-600 mt-0.5">•</span>
-                                    <span class="lang-zh"><strong>硬體級加密：</strong>使用 SecureStore 保護敏感資料</span>
-                                    <span class="lang-en hidden"><strong>Hardware encryption:</strong> SecureStore protects sensitive data</span>
+                                    <span class="lang-zh"><strong>即時資訊：</strong>獲取公司背景、產業趨勢、最新動態</span>
+                                    <span class="lang-en hidden"><strong>Real-time info:</strong> Get company background, industry trends, latest developments</span>
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-blue-600 mt-0.5">•</span>
-                                    <span class="lang-zh"><strong>裝置鎖定：</strong>需要解鎖裝置才能存取</span>
-                                    <span class="lang-en hidden"><strong>Device lock:</strong> Requires unlock to access</span>
+                                    <span class="lang-zh"><strong>商務準備：</strong>讓您每次交流都更有深度</span>
+                                    <span class="lang-en hidden"><strong>Business ready:</strong> Make every conversation more meaningful</span>
                                 </li>
                             </ul>
                             
-                            <a href="privacy.html" class="text-sm text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
-                                <span class="lang-zh">了解更多隱私保護措施 →</span>
-                                <span class="lang-en hidden">Learn more about privacy →</span>
+                            <a href="#features" class="text-sm text-blue-600 hover:underline inline-flex items-center gap-1 font-medium">
+                                <span class="lang-zh">查看更多功能特色 →</span>
+                                <span class="lang-en hidden">See more features →</span>
                             </a>
                         </div>
                     </div>
@@ -895,16 +960,16 @@
                                 </li>
                                 <li class="flex items-start gap-2">
                                     <span class="text-blue-600 mt-0.5">•</span>
-                                    <span class="lang-zh">採用 Google Vision AI 技術，辨識準確率 <strong>95% 以上</strong></span>
-                                    <span class="lang-en hidden">Google Vision AI technology, <strong>95%+ accuracy</strong></span>
+                                    <span class="lang-zh">採用先進 AI 技術，辨識準確率 <strong>95% 以上</strong></span>
+                                    <span class="lang-en hidden">Advanced AI technology, <strong>95%+ accuracy</strong></span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 
-                <!-- 問題 4: AI 公司分析 -->
-                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+                <!-- 問題 3: AI 公司分析 -->
+                <div class="faq-item border border-gray-200 rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <button class="faq-question w-full text-left p-6 flex justify-between items-center group">
                         <span class="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
                             <span class="lang-zh">什麼是 AI 公司分析功能？</span>
@@ -916,8 +981,8 @@
                     </button>
                     <div class="faq-answer px-6 pb-6">
                         <div>
-                            <p class="text-gray-900 font-semibold mb-3 lang-zh">🤖 AI 即時搜尋公司背景資訊</p>
-                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">🤖 AI real-time company background search</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">AI 即時搜尋公司背景資訊</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">AI real-time company background search</p>
                             
                             <p class="text-sm text-gray-700 mb-3">
                                 <span class="lang-zh">點擊一鍵，AI 立即分析名片上公司的背景資訊、產業動態與最新發展，幫助您在商務交流前做好準備。</span>
@@ -981,8 +1046,8 @@
                     </button>
                     <div class="faq-answer px-6 pb-6">
                         <div>
-                            <p class="text-gray-900 font-semibold mb-3 lang-zh">📤 專業版可匯出 CSV 格式</p>
-                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">📤 Premium users can export to CSV</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-zh">專業版可匯出 CSV 格式</p>
+                            <p class="text-gray-900 font-semibold mb-3 lang-en hidden">Premium users can export to CSV</p>
                             
                             <ul class="space-y-2 text-sm text-gray-700 mb-3">
                                 <li class="flex items-start gap-2">
@@ -1001,7 +1066,7 @@
                                 <span class="lang-zh">了解專業版功能 →</span>
                                 <span class="lang-en hidden">Learn about Premium →</span>
                             </a>
-                        </div>
+                    </div>
                     </div>
                 </div>
                 
@@ -1076,8 +1141,11 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up">
-                    <div class="text-5xl mb-4">💼</div>
+                <div class="relative p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition overflow-hidden" data-aos="fade-up">
+                    <div class="absolute top-0 right-0 w-32 h-32 opacity-20">
+                        <img src="assets/images/業務.png" alt="業務人員使用AI名片管理工具" class="w-full h-full object-contain">
+                    </div>
+                    <div class="relative z-10">
                     <h3 class="font-bold text-gray-900 mb-2 text-lg">
                         <span class="lang-zh">業務人員</span>
                         <span class="lang-en hidden">Sales Professionals</span>
@@ -1086,10 +1154,14 @@
                         <span class="lang-zh">每天收到大量名片，需要快速建檔追蹤客戶</span>
                         <span class="lang-en hidden">Manage daily card influx, track clients efficiently</span>
                     </p>
+                    </div>
                 </div>
                 
-                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-5xl mb-4">🤝</div>
+                <div class="relative p-6 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl hover:shadow-lg transition overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <div class="absolute top-0 right-0 w-32 h-32 opacity-20">
+                        <img src="assets/images/主管.png" alt="企業主管使用AI名片管理工具" class="w-full h-full object-contain">
+                    </div>
+                    <div class="relative z-10">
                     <h3 class="font-bold text-gray-900 mb-2 text-lg">
                         <span class="lang-zh">企業主管</span>
                         <span class="lang-en hidden">Business Executives</span>
@@ -1098,10 +1170,14 @@
                         <span class="lang-zh">參加商務活動後，需要整理人脈並深入了解對方公司</span>
                         <span class="lang-en hidden">Organize contacts after events, understand companies</span>
                     </p>
+                    </div>
                 </div>
                 
-                <div class="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-5xl mb-4">🎓</div>
+                <div class="relative p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl hover:shadow-lg transition overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-32 h-32 opacity-20">
+                        <img src="assets/images/新鮮人.png" alt="職場新鮮人使用AI名片管理工具" class="w-full h-full object-contain">
+                    </div>
+                    <div class="relative z-10">
                     <h3 class="font-bold text-gray-900 mb-2 text-lg">
                         <span class="lang-zh">職場新鮮人</span>
                         <span class="lang-en hidden">Young Professionals</span>
@@ -1110,6 +1186,7 @@
                         <span class="lang-zh">開始建立職場人脈，需要專業工具管理聯絡人</span>
                         <span class="lang-en hidden">Build professional network with organized contacts</span>
                     </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1133,50 +1210,50 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">
+                        <span class="lang-zh">AI 智能分析</span>
+                        <span class="lang-en hidden">AI Smart Analysis</span>
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <span class="lang-zh">智能分析公司背景與產業動態，讓您每次商務交流都更有深度、更專業。不只是儲存名片，更是您的商務智能助手。</span>
+                        <span class="lang-en hidden">Smart analysis of company background and industry trends makes every business conversation more meaningful and professional. Not just storing cards, but your business intelligence assistant.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">隱私優先設計</span>
-                        <span class="lang-en hidden">Privacy-First Design</span>
+                        <span class="lang-zh">先進 OCR 技術</span>
+                        <span class="lang-en hidden">Advanced OCR Technology</span>
                     </h3>
                     <p class="text-gray-600 leading-relaxed">
-                        <span class="lang-zh">所有資料 100% 儲存在您的裝置上，不上傳雲端。使用 SecureStore 硬體級保護，確保您的聯絡人資訊安全無虞。</span>
-                        <span class="lang-en hidden">100% local storage on your device with SecureStore hardware-level protection. Your contact data stays private and secure.</span>
-                    </p>
-                </div>
-                
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">Google AI 技術</span>
-                        <span class="lang-en hidden">Google AI Technology</span>
-                    </h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        <span class="lang-zh">採用 Google Vision AI 和 Gemini AI 雙引擎，提供業界領先的 OCR 辨識準確度。支援繁體中文、簡體中文與英文，95% 以上辨識準確率。</span>
-                        <span class="lang-en hidden">Powered by Google Vision AI and Gemini AI for industry-leading OCR accuracy. Supports Traditional Chinese, Simplified Chinese, and English with 95%+ accuracy.</span>
+                        <span class="lang-zh">採用先進 AI 技術，提供業界領先的 OCR 辨識準確度。支援繁體中文、簡體中文與英文，95% 以上辨識準確率。</span>
+                        <span class="lang-en hidden">Powered by advanced AI technology for industry-leading OCR accuracy. Supports Traditional Chinese, Simplified Chinese, and English with 95%+ accuracy.</span>
                     </p>
                 </div>
                 
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-3">
-                        <span class="lang-zh">極速掃描體驗</span>
-                        <span class="lang-en hidden">Lightning-Fast Scanning</span>
+                        <span class="lang-zh">專業簡約體驗</span>
+                        <span class="lang-en hidden">Professional & Simple</span>
                     </h3>
                     <p class="text-gray-600 leading-relaxed">
-                        <span class="lang-zh">3-8 秒完成名片辨識，拍照後立即自動提取姓名、職稱、公司、電話、Email 等資訊。簡單三步驟：拍照、確認、儲存。</span>
-                        <span class="lang-en hidden">3-8 seconds to scan and extract names, titles, companies, phones, emails automatically. Simple 3 steps: Scan, Confirm, Save.</span>
+                        <span class="lang-zh">簡潔直觀的介面設計，3-8 秒完成掃描，自動提取 17 個完整欄位。專為商務人士打造的專業工具。</span>
+                        <span class="lang-en hidden">Clean and intuitive interface design, 3-8 seconds to complete scanning with automatic extraction of 17 complete fields. Professional tool designed for business professionals.</span>
                     </p>
                 </div>
             </div>
@@ -1238,11 +1315,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
                     <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
-                            </svg>
-                        </div>
+                        <img src="assets/images/icon.png" alt="AI 名片經理" class="w-10 h-10 rounded-xl">
                         <span class="text-xl font-bold text-white">
                             <span class="lang-zh">AI 名片經理</span>
                             <span class="lang-en hidden">AI Card Manager</span>
