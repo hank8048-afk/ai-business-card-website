@@ -427,7 +427,7 @@ initBackToTop();
 function preloadImages() {
     const imagesToPreload = [
         'assets/images/app-mockup.png',
-        'assets/images/favicon.svg'
+        'assets/images/主要圖示.png'
     ];
     
     imagesToPreload.forEach(src => {
