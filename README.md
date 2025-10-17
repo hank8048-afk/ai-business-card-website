@@ -6,8 +6,8 @@ A professional, bilingual (中文/English) landing website for the AI Business C
 ---
 
 ## 🌐 Live Website
-- **Domain**: https://aibusinesscardmanager.com (placeholder)
-- **Deployment Platform**: 
+- **Domain**: https://aibusinesscardmanager.com
+- **Deployment Platform**: Zeabur (recommended)
 
 ---
 
@@ -214,7 +214,7 @@ The website showcases the following app features:
 ## 📞 Contact & Support
 
 - **Email**: aibusinesscardmanager@gmail.com
-- **Website**: https://aimingpian.com
+- **Website**: https://aibusinesscardmanager.com
 - **App**: AI 名片經理 / AI Business Card Manager
 
 ---
